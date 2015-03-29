@@ -1,6 +1,4 @@
-helpers do
-
-  class Guess
+  module GuessControllerHelper
     def initialize(heights, weights, genders)
       @heights, @weights, @genders = heights, weights, genders
       if @heights.length != @weights.length
@@ -47,10 +45,12 @@ helpers do
       Float(total) / Float(values.length)
     end
 
-    def get_gender_val(height, weight)
+    def self.get_gender_val(height, weight)
+      @b0 = self.b0
+      @b1 = self.slope_height
+      @b2 = self.slope_weight
+
       val = @b0 + (@b1 * height) + (@b2 * weight)
       return val > 0 ? 'M' : 'F'
     end
   end
-
-end

@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+20.times do
+  Person.create(
+    height: rand(62..78),
+    weight: rand(110..220),
+    gender: [-1,1].shuffle.pop
+  )
+end
