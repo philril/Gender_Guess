@@ -1,5 +1,5 @@
   module GuessControllerHelper
-    def initiate(heights, weights, genders)
+    def guess(heights, weights, genders, height_entry, weight_entry)
       @heights = heights
       @weights = weights
       @genders = genders
@@ -9,6 +9,8 @@
 
       if @heights.length != @weights.length
         raise "Unbalanced data"
+      else
+        get_gender_val(height_entry, weight_entry)
       end
     end
 
@@ -54,5 +56,12 @@
     def get_gender_val(height, weight)
       val = @b0 + (@b1 * height.to_i) + (@b2 * weight.to_i)
       return val > 0 ? 'Male' : 'Female'
+    end
+
+    def convert(gender_string)
+      case gender_string.downcase
+      when "male" then return 1
+      when "female" then return -1
+      end
     end
   end

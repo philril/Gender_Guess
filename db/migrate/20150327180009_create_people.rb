@@ -4,6 +4,7 @@ class CreatePeople < ActiveRecord::Migration
       t.integer :height
       t.integer :weight
       t.integer :gender
+      t.boolean :guess_correct
 
       t.timestamps null: false
     end

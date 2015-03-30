@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 
   post "guess/make_guess" => "guess#make_guess", as: :make_guess
 
+  post "guess/correct" => "guess#correct", as: :correct
+
+  post "guess/incorrect" => "guess#incorrect", as: :incorrect
+
   get "guess/results" => "guess#results", as: :results
 
   # You can have the root of your site routed with "root"

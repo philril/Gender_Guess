@@ -1,7 +1,6 @@
 require 'json'
 
 class GuessController < ApplicationController
-  skip_before_action :verify_authenticity_token
   include GuessControllerHelper
 
 #GET
@@ -11,28 +10,49 @@ class GuessController < ApplicationController
 
 # POST
   def make_guess
-    #Refactor!
     heights = Person.pluck(:height)
     weights = Person.pluck(:weight)
     genders = Person.pluck(:gender)
 
-    my_guess = initiate(heights, weights, genders)
-
-    height_entry = params[:height]
-    weight_entry = params[:weight]
-    @gender_guess = get_gender_val(height_entry, weight_entry)
+    @height = params[:height]
+    @weight = params[:weight]
+    @gender_guess = guess(heights, weights, genders, @height, @weight)
 
     respond_to do |format|
-      # format.html
-      format.js   {render 'make_guess.js.erb'}
-      # format.json { render json: @gender_guess }
+      format.js {render 'make_guess.js.erb'}
     end
   end
 
-# GET
-  def results
-    @people = Person.all
+
+#POST
+  def correct
+    @person = Person.create(
+      height: params[:height],
+      weight: params[:weight],
+      gender: convert(params[:guessed_gender]),
+      guess_correct: true
+    )
+    @num_correct = Person.where(guess_correct:true).length
+    @total_num = Person.all.length
+
+    respond_to do |format|
+      if @person.save
+        format.js   {render 'guess_stats.js.erb'}
+      else
+        format.json { render json: @person.errors, status: :unprocessable_entity }
+      end
+    end
   end
+
+# # POST
+#   def incorrect
+#     Person.create(
+#       height: params[:height],
+#       weight: params[:weight],
+#       gender: convert(params[:guessed_gender]),
+#       guess_correct: false
+#     )
+#   end
 
 end
 

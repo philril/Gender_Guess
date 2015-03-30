@@ -11,7 +11,8 @@
   Person.create(
     height: rand(66..78),
     weight: rand(15..220),
-    gender: 1
+    gender: 1,
+    guess_correct: true
   )
 end
 
@@ -19,7 +20,8 @@ end
 10.times do
   Person.create(
     height: rand(62..70),
-    weight: rand(110..180),
-    gender: -1
+    weight: rand(110..170),
+    gender: -1,
+    guess_correct: true
   )
 end

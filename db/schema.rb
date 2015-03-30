@@ -17,8 +17,9 @@ ActiveRecord::Schema.define(version: 20150327180009) do
     t.integer  "height"
     t.integer  "weight"
     t.integer  "gender"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "guess_correct"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end
