@@ -3,7 +3,7 @@ class CreatePeople < ActiveRecord::Migration
     create_table :people do |t|
       t.integer :height
       t.integer :weight
-      t.string :gender
+      t.integer :gender
 
       t.timestamps null: false
     end

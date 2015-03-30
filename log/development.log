@@ -2,3 +2,5 @@
 SQLite3::SQLException: no such table: people: SELECT "people".* FROM "people"
   [1m[36mPerson Load (6.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
 SQLite3::SQLException: no such table: people: SELECT "people".* FROM "people"
+  [1m[36mPerson Load (362.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+SQLite3::SQLException: no such table: people: SELECT "people".* FROM "people"

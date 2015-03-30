@@ -1,6 +1,12 @@
   module GuessControllerHelper
-    def initialize(heights, weights, genders)
-      @heights, @weights, @genders = heights, weights, genders
+    def initiate(heights, weights, genders)
+      @heights = heights
+      @weights = weights
+      @genders = genders
+      @b0 = b0
+      @b1 = slope_height
+      @b2 = slope_weight
+
       if @heights.length != @weights.length
         raise "Unbalanced data"
       end
@@ -45,12 +51,11 @@
       Float(total) / Float(values.length)
     end
 
-    def self.get_gender_val(height, weight)
-      @b0 = self.b0
-      @b1 = self.slope_height
-      @b2 = self.slope_weight
-
-      val = @b0 + (@b1 * height) + (@b2 * weight)
+    def get_gender_val(height, weight)
+      val = @b0 + (@b1 * height.to_i) + (@b2 * weight.to_i)
       return val > 0 ? 'M' : 'F'
+
+      p val > 0 ? 'M' : 'F'
+
     end
   end

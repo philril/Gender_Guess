@@ -230,3 +230,949 @@ GuessControllerTest: test_Guess_fields
 Processing by GuessController#results as HTML
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#results as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#results as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-29 23:53:33.945131"], ["updated_at", "2015-03-29 23:53:33.945131"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:25:45.374451"], ["updated_at", "2015-03-30 16:25:45.374451"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:31:47.014813"], ["updated_at", "2015-03-30 16:31:47.014813"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"1"}
+  [1m[35m (0.1ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:32:16.563596"], ["updated_at", "2015-03-30 16:32:16.563596"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"1"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:33:27.360817"], ["updated_at", "2015-03-30 16:33:27.360817"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"1"}
+  [1m[35m (0.1ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:33:57.514613"], ["updated_at", "2015-03-30 16:33:57.514613"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"1"}
+  [1m[35m (0.1ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:34:53.717566"], ["updated_at", "2015-03-30 16:34:53.717566"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"1"}
+  [1m[35m (0.1ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:35:23.846500"], ["updated_at", "2015-03-30 16:35:23.846500"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"1"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:35:58.524636"], ["updated_at", "2015-03-30 16:35:58.524636"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"1"}
+  [1m[35m (0.1ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:36:11.900447"], ["updated_at", "2015-03-30 16:36:11.900447"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"1"}
+  [1m[35m (0.1ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mPerson Load (3.9ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:39:10.466971"], ["updated_at", "2015-03-30 16:39:10.466971"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"1"}
+  [1m[35m (0.1ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+  [1m[36m (2.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mPerson Load (3.5ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (4.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 78], ["weight", 115], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.321992"], ["updated_at", "2015-03-30 16:40:04.321992"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 179], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.330357"], ["updated_at", "2015-03-30 16:40:04.330357"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 154], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.333517"], ["updated_at", "2015-03-30 16:40:04.333517"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 191], ["gender", "-1"], ["created_at", "2015-03-30 16:40:04.336299"], ["updated_at", "2015-03-30 16:40:04.336299"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 132], ["gender", "-1"], ["created_at", "2015-03-30 16:40:04.340763"], ["updated_at", "2015-03-30 16:40:04.340763"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 165], ["gender", "-1"], ["created_at", "2015-03-30 16:40:04.347091"], ["updated_at", "2015-03-30 16:40:04.347091"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 138], ["gender", "-1"], ["created_at", "2015-03-30 16:40:04.353115"], ["updated_at", "2015-03-30 16:40:04.353115"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 204], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.356527"], ["updated_at", "2015-03-30 16:40:04.356527"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 63], ["weight", 186], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.359366"], ["updated_at", "2015-03-30 16:40:04.359366"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 147], ["gender", "-1"], ["created_at", "2015-03-30 16:40:04.362103"], ["updated_at", "2015-03-30 16:40:04.362103"]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 200], ["gender", "-1"], ["created_at", "2015-03-30 16:40:04.368394"], ["updated_at", "2015-03-30 16:40:04.368394"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 74], ["weight", 128], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.372020"], ["updated_at", "2015-03-30 16:40:04.372020"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 130], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.374842"], ["updated_at", "2015-03-30 16:40:04.374842"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 146], ["gender", "-1"], ["created_at", "2015-03-30 16:40:04.377592"], ["updated_at", "2015-03-30 16:40:04.377592"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 180], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.383203"], ["updated_at", "2015-03-30 16:40:04.383203"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 207], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.386554"], ["updated_at", "2015-03-30 16:40:04.386554"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 210], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.389524"], ["updated_at", "2015-03-30 16:40:04.389524"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 125], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.392626"], ["updated_at", "2015-03-30 16:40:04.392626"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 167], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.395374"], ["updated_at", "2015-03-30 16:40:04.395374"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 197], ["gender", "1"], ["created_at", "2015-03-30 16:40:04.398054"], ["updated_at", "2015-03-30 16:40:04.398054"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[36mPerson Load (2.9ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:40:39.679156"], ["updated_at", "2015-03-30 16:40:39.679156"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"21"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:41:13.164697"], ["updated_at", "2015-03-30 16:41:13.164697"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"21"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:41:34.665475"], ["updated_at", "2015-03-30 16:41:34.665475"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"21"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:42:19.600728"], ["updated_at", "2015-03-30 16:42:19.600728"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"21"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 202], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.311352"], ["updated_at", "2015-03-30 16:42:33.311352"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 73], ["weight", 183], ["gender", "-1"], ["created_at", "2015-03-30 16:42:33.322899"], ["updated_at", "2015-03-30 16:42:33.322899"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 62], ["weight", 177], ["gender", "-1"], ["created_at", "2015-03-30 16:42:33.326124"], ["updated_at", "2015-03-30 16:42:33.326124"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 74], ["weight", 180], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.329156"], ["updated_at", "2015-03-30 16:42:33.329156"]]
+  [1m[36m (4.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 136], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.335703"], ["updated_at", "2015-03-30 16:42:33.335703"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 191], ["gender", "-1"], ["created_at", "2015-03-30 16:42:33.339007"], ["updated_at", "2015-03-30 16:42:33.339007"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 153], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.342135"], ["updated_at", "2015-03-30 16:42:33.342135"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 182], ["gender", "-1"], ["created_at", "2015-03-30 16:42:33.344900"], ["updated_at", "2015-03-30 16:42:33.344900"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 218], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.347847"], ["updated_at", "2015-03-30 16:42:33.347847"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 122], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.351062"], ["updated_at", "2015-03-30 16:42:33.351062"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 119], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.353815"], ["updated_at", "2015-03-30 16:42:33.353815"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 198], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.356548"], ["updated_at", "2015-03-30 16:42:33.356548"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 173], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.359917"], ["updated_at", "2015-03-30 16:42:33.359917"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 130], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.362968"], ["updated_at", "2015-03-30 16:42:33.362968"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 75], ["weight", 121], ["gender", "-1"], ["created_at", "2015-03-30 16:42:33.365689"], ["updated_at", "2015-03-30 16:42:33.365689"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 74], ["weight", 111], ["gender", "-1"], ["created_at", "2015-03-30 16:42:33.368850"], ["updated_at", "2015-03-30 16:42:33.368850"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 153], ["gender", "-1"], ["created_at", "2015-03-30 16:42:33.372987"], ["updated_at", "2015-03-30 16:42:33.372987"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 78], ["weight", 161], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.376230"], ["updated_at", "2015-03-30 16:42:33.376230"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 116], ["gender", "1"], ["created_at", "2015-03-30 16:42:33.379430"], ["updated_at", "2015-03-30 16:42:33.379430"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 176], ["gender", "-1"], ["created_at", "2015-03-30 16:42:33.383313"], ["updated_at", "2015-03-30 16:42:33.383313"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:42:40.071006"], ["updated_at", "2015-03-30 16:42:40.071006"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"41"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 63], ["weight", 116], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.645974"], ["updated_at", "2015-03-30 16:43:02.645974"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 204], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.654585"], ["updated_at", "2015-03-30 16:43:02.654585"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 63], ["weight", 132], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.659848"], ["updated_at", "2015-03-30 16:43:02.659848"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 75], ["weight", 114], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.663666"], ["updated_at", "2015-03-30 16:43:02.663666"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 163], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.666912"], ["updated_at", "2015-03-30 16:43:02.666912"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 159], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.669695"], ["updated_at", "2015-03-30 16:43:02.669695"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 140], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.672449"], ["updated_at", "2015-03-30 16:43:02.672449"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 161], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.676780"], ["updated_at", "2015-03-30 16:43:02.676780"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 146], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.679625"], ["updated_at", "2015-03-30 16:43:02.679625"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 196], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.682625"], ["updated_at", "2015-03-30 16:43:02.682625"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 121], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.685359"], ["updated_at", "2015-03-30 16:43:02.685359"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 167], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.689562"], ["updated_at", "2015-03-30 16:43:02.689562"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 207], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.692649"], ["updated_at", "2015-03-30 16:43:02.692649"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 134], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.695833"], ["updated_at", "2015-03-30 16:43:02.695833"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 205], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.698677"], ["updated_at", "2015-03-30 16:43:02.698677"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 62], ["weight", 204], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.701712"], ["updated_at", "2015-03-30 16:43:02.701712"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 168], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.704469"], ["updated_at", "2015-03-30 16:43:02.704469"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 200], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.707169"], ["updated_at", "2015-03-30 16:43:02.707169"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 124], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.712027"], ["updated_at", "2015-03-30 16:43:02.712027"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 131], ["gender", "-1"], ["created_at", "2015-03-30 16:43:02.715194"], ["updated_at", "2015-03-30 16:43:02.715194"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:43:15.250928"], ["updated_at", "2015-03-30 16:43:15.250928"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"61"}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePeople (20150327180009)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "height" integer, "weight" integer, "gender" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150327180009"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePeople (20150327180009)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "height" integer, "weight" integer, "gender" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150327180009"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 153], ["gender", "-1"], ["created_at", "2015-03-30 16:45:41.430549"], ["updated_at", "2015-03-30 16:45:41.430549"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 134], ["gender", "-1"], ["created_at", "2015-03-30 16:45:41.434145"], ["updated_at", "2015-03-30 16:45:41.434145"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 167], ["gender", "1"], ["created_at", "2015-03-30 16:45:41.436913"], ["updated_at", "2015-03-30 16:45:41.436913"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 149], ["gender", "-1"], ["created_at", "2015-03-30 16:45:41.439560"], ["updated_at", "2015-03-30 16:45:41.439560"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 175], ["gender", "1"], ["created_at", "2015-03-30 16:45:41.442908"], ["updated_at", "2015-03-30 16:45:41.442908"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 198], ["gender", "1"], ["created_at", "2015-03-30 16:45:41.446287"], ["updated_at", "2015-03-30 16:45:41.446287"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 180], ["gender", "1"], ["created_at", "2015-03-30 16:45:41.448996"], ["updated_at", "2015-03-30 16:45:41.448996"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 184], ["gender", "-1"], ["created_at", "2015-03-30 16:45:41.451661"], ["updated_at", "2015-03-30 16:45:41.451661"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 159], ["gender", "1"], ["created_at", "2015-03-30 16:45:41.454532"], ["updated_at", "2015-03-30 16:45:41.454532"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 179], ["gender", "-1"], ["created_at", "2015-03-30 16:45:41.457519"], ["updated_at", "2015-03-30 16:45:41.457519"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 73], ["weight", 135], ["gender", "1"], ["created_at", "2015-03-30 16:45:41.460628"], ["updated_at", "2015-03-30 16:45:41.460628"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 162], ["gender", "1"], ["created_at", "2015-03-30 16:45:41.463346"], ["updated_at", "2015-03-30 16:45:41.463346"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 62], ["weight", 214], ["gender", "1"], ["created_at", "2015-03-30 16:45:41.466054"], ["updated_at", "2015-03-30 16:45:41.466054"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 164], ["gender", "1"], ["created_at", "2015-03-30 16:45:41.469435"], ["updated_at", "2015-03-30 16:45:41.469435"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 197], ["gender", "-1"], ["created_at", "2015-03-30 16:45:41.472112"], ["updated_at", "2015-03-30 16:45:41.472112"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 131], ["gender", "-1"], ["created_at", "2015-03-30 16:45:41.475329"], ["updated_at", "2015-03-30 16:45:41.475329"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 71], ["weight", 130], ["gender", "1"], ["created_at", "2015-03-30 16:45:41.478222"], ["updated_at", "2015-03-30 16:45:41.478222"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 216], ["gender", "-1"], ["created_at", "2015-03-30 16:45:41.480966"], ["updated_at", "2015-03-30 16:45:41.480966"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 148], ["gender", "1"], ["created_at", "2015-03-30 16:45:41.484074"], ["updated_at", "2015-03-30 16:45:41.484074"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 124], ["gender", "-1"], ["created_at", "2015-03-30 16:45:41.486819"], ["updated_at", "2015-03-30 16:45:41.486819"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:45:51.154567"], ["updated_at", "2015-03-30 16:45:51.154567"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"21"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36m (3.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePeople (20150327180009)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "height" integer, "weight" integer, "gender" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150327180009"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 170], ["gender", "1"], ["created_at", "2015-03-30 16:47:16.691915"], ["updated_at", "2015-03-30 16:47:16.691915"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 190], ["gender", "1"], ["created_at", "2015-03-30 16:47:16.695438"], ["updated_at", "2015-03-30 16:47:16.695438"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 67], ["weight", 202], ["gender", "1"], ["created_at", "2015-03-30 16:47:16.698158"], ["updated_at", "2015-03-30 16:47:16.698158"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 55], ["gender", "1"], ["created_at", "2015-03-30 16:47:16.700797"], ["updated_at", "2015-03-30 16:47:16.700797"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 74], ["weight", 27], ["gender", "1"], ["created_at", "2015-03-30 16:47:16.703431"], ["updated_at", "2015-03-30 16:47:16.703431"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 148], ["gender", "1"], ["created_at", "2015-03-30 16:47:16.707772"], ["updated_at", "2015-03-30 16:47:16.707772"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 119], ["gender", "1"], ["created_at", "2015-03-30 16:47:16.711029"], ["updated_at", "2015-03-30 16:47:16.711029"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 75], ["weight", 185], ["gender", "1"], ["created_at", "2015-03-30 16:47:16.713670"], ["updated_at", "2015-03-30 16:47:16.713670"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 74], ["weight", 15], ["gender", "1"], ["created_at", "2015-03-30 16:47:16.716812"], ["updated_at", "2015-03-30 16:47:16.716812"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 162], ["gender", "1"], ["created_at", "2015-03-30 16:47:16.719857"], ["updated_at", "2015-03-30 16:47:16.719857"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 127], ["gender", "-1"], ["created_at", "2015-03-30 16:47:16.722984"], ["updated_at", "2015-03-30 16:47:16.722984"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 174], ["gender", "-1"], ["created_at", "2015-03-30 16:47:16.725753"], ["updated_at", "2015-03-30 16:47:16.725753"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 62], ["weight", 137], ["gender", "-1"], ["created_at", "2015-03-30 16:47:16.729059"], ["updated_at", "2015-03-30 16:47:16.729059"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 133], ["gender", "-1"], ["created_at", "2015-03-30 16:47:16.731799"], ["updated_at", "2015-03-30 16:47:16.731799"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 67], ["weight", 169], ["gender", "-1"], ["created_at", "2015-03-30 16:47:16.734465"], ["updated_at", "2015-03-30 16:47:16.734465"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 113], ["gender", "-1"], ["created_at", "2015-03-30 16:47:16.737097"], ["updated_at", "2015-03-30 16:47:16.737097"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 156], ["gender", "-1"], ["created_at", "2015-03-30 16:47:16.740137"], ["updated_at", "2015-03-30 16:47:16.740137"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 63], ["weight", 128], ["gender", "-1"], ["created_at", "2015-03-30 16:47:16.742872"], ["updated_at", "2015-03-30 16:47:16.742872"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 180], ["gender", "-1"], ["created_at", "2015-03-30 16:47:16.745506"], ["updated_at", "2015-03-30 16:47:16.745506"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 171], ["gender", "-1"], ["created_at", "2015-03-30 16:47:16.748126"], ["updated_at", "2015-03-30 16:47:16.748126"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:47:23.161480"], ["updated_at", "2015-03-30 16:47:23.161480"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"21"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePeople (20150327180009)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "height" integer, "weight" integer, "gender" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150327180009"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 138], ["gender", 1], ["created_at", "2015-03-30 16:48:28.497702"], ["updated_at", "2015-03-30 16:48:28.497702"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 203], ["gender", 1], ["created_at", "2015-03-30 16:48:28.501288"], ["updated_at", "2015-03-30 16:48:28.501288"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 76], ["weight", 32], ["gender", 1], ["created_at", "2015-03-30 16:48:28.504502"], ["updated_at", "2015-03-30 16:48:28.504502"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 181], ["gender", 1], ["created_at", "2015-03-30 16:48:28.507180"], ["updated_at", "2015-03-30 16:48:28.507180"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 96], ["gender", 1], ["created_at", "2015-03-30 16:48:28.510835"], ["updated_at", "2015-03-30 16:48:28.510835"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 120], ["gender", 1], ["created_at", "2015-03-30 16:48:28.514076"], ["updated_at", "2015-03-30 16:48:28.514076"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 76], ["weight", 216], ["gender", 1], ["created_at", "2015-03-30 16:48:28.516945"], ["updated_at", "2015-03-30 16:48:28.516945"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 172], ["gender", 1], ["created_at", "2015-03-30 16:48:28.520421"], ["updated_at", "2015-03-30 16:48:28.520421"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 129], ["gender", 1], ["created_at", "2015-03-30 16:48:28.526562"], ["updated_at", "2015-03-30 16:48:28.526562"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 75], ["weight", 131], ["gender", 1], ["created_at", "2015-03-30 16:48:28.530237"], ["updated_at", "2015-03-30 16:48:28.530237"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 115], ["gender", -1], ["created_at", "2015-03-30 16:48:28.533565"], ["updated_at", "2015-03-30 16:48:28.533565"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 132], ["gender", -1], ["created_at", "2015-03-30 16:48:28.536320"], ["updated_at", "2015-03-30 16:48:28.536320"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 165], ["gender", -1], ["created_at", "2015-03-30 16:48:28.539233"], ["updated_at", "2015-03-30 16:48:28.539233"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 154], ["gender", -1], ["created_at", "2015-03-30 16:48:28.542671"], ["updated_at", "2015-03-30 16:48:28.542671"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 67], ["weight", 124], ["gender", -1], ["created_at", "2015-03-30 16:48:28.545881"], ["updated_at", "2015-03-30 16:48:28.545881"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 137], ["gender", -1], ["created_at", "2015-03-30 16:48:28.549019"], ["updated_at", "2015-03-30 16:48:28.549019"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 180], ["gender", -1], ["created_at", "2015-03-30 16:48:28.551749"], ["updated_at", "2015-03-30 16:48:28.551749"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 127], ["gender", -1], ["created_at", "2015-03-30 16:48:28.554401"], ["updated_at", "2015-03-30 16:48:28.554401"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 119], ["gender", -1], ["created_at", "2015-03-30 16:48:28.557870"], ["updated_at", "2015-03-30 16:48:28.557870"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 130], ["gender", -1], ["created_at", "2015-03-30 16:48:28.560726"], ["updated_at", "2015-03-30 16:48:28.560726"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 16:48:35.362755"], ["updated_at", "2015-03-30 16:48:35.362755"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"21"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.9ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (2.2ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (1.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (2.3ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (1.2ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.9ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.8ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (1.0ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 1.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>nil}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "people" ("height", "weight", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["height", 78], ["weight", 170], ["created_at", "2015-03-30 17:10:48.492328"], ["updated_at", "2015-03-30 17:10:48.492328"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuessController#make_guess as HTML
+  Parameters: {"person"=>"21"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"height"=>"78", "weight"=>"120"}
+  [1m[36m (2.0ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 2.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"height"=>"78", "weight"=>"120"}
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"height"=>"78", "weight"=>"120"}
+  [1m[36m (0.9ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"height"=>"78", "weight"=>"120"}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"height"=>"78", "weight"=>"120"}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction

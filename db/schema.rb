@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20150327180009) do
   create_table "people", force: :cascade do |t|
     t.integer  "height"
     t.integer  "weight"
-    t.string   "gender"
+    t.integer  "gender"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
