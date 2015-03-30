@@ -1176,3 +1176,21 @@ Processing by GuessController#make_guess as HTML
   [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
 Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"height"=>"78", "weight"=>"120"}
+  [1m[36m (2.0ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"height"=>"78", "weight"=>"120"}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction

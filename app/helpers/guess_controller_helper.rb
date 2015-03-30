@@ -53,9 +53,6 @@
 
     def get_gender_val(height, weight)
       val = @b0 + (@b1 * height.to_i) + (@b2 * weight.to_i)
-      return val > 0 ? 'M' : 'F'
-
-      p val > 0 ? 'M' : 'F'
-
+      return val > 0 ? 'Male' : 'Female'
     end
   end

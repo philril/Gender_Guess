@@ -1,0 +1,19 @@
+<%= form_for :guess, url: make_guess_path, remote: true, :html => {:class => "form-horizontal center"} do |f| %>
+
+  <div class="form-group">
+    <%= f.label :height, "Height:", class: "col-md-4 control-label" %>
+    <div class="col-md-8">
+      <%= f.text_field :height, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :weight, "Weight:", class: "col-md-4 control-label" %>
+    <div class="col-md-8">
+      <%= f.text_field :weight, class: "form-control" %>
+    </div>
+  </div>
+
+  <%= f.submit "Submit", class: "btn btn-default btn-primary"%>
+
+<% end %>

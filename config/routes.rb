@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+  root :to => 'guess#index'
 
   post "guess/make_guess" => "guess#make_guess", as: :make_guess
 

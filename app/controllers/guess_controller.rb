@@ -1,7 +1,13 @@
 require 'json'
 
 class GuessController < ApplicationController
+  skip_before_action :verify_authenticity_token
   include GuessControllerHelper
+
+#GET
+  def index
+
+  end
 
 # POST
   def make_guess
@@ -16,7 +22,11 @@ class GuessController < ApplicationController
     weight_entry = params[:weight]
     @gender_guess = get_gender_val(height_entry, weight_entry)
 
-    format.json { render json: @gender_guess }
+    respond_to do |format|
+      # format.html
+      format.js   {render 'make_guess.js.erb'}
+      # format.json { render json: @gender_guess }
+    end
   end
 
 # GET
