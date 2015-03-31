@@ -57,7 +57,7 @@ class GuessController < ApplicationController
   def results
     @num_correct = Person.where(guess_correct:true).length
     @total_num = Person.where(guess_correct:false).length + Person.where(guess_correct:true).length
-    @percent = (@num_correct.to_f / @total_num.to_f * 100).to_i
+    @percent = (@num_correct.to_f / @total_num.to_f * 100).round
   end
 
 end

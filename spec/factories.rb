@@ -4,6 +4,8 @@ FactoryGirl.define do
     feet 6
     inches 0
     weight 170
+    gender -1
+    guess_correct false
   end
 
 end
