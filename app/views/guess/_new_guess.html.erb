@@ -4,9 +4,9 @@
   <h5>Is this correct?</h5>
 
   <!-- Each button is a post containing height, weight, gender, guess_correct data -->
-  <%= button_to 'Yes', { action: 'correct', height: @height, weight: @weight,
+  <%= button_to 'Yes', { action: 'correct', remote: true, height: @height, weight: @weight,
     guessed_gender: @gender_guess } %>
-  <%= button_to 'No', { action: 'incorrect', height: @height, weight: @weight,
+  <%= button_to 'No', { action: 'incorrect', remote: true, height: @height, weight: @weight,
     guessed_gender: @gender_guess } %>
 
 </div>

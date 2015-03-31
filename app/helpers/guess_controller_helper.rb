@@ -58,10 +58,14 @@
       return val > 0 ? 'Male' : 'Female'
     end
 
-    def convert(gender_string)
+    def convert_gender_string(gender_string)
       case gender_string.downcase
       when "male" then return 1
       when "female" then return -1
       end
+    end
+
+    def convert_feet_inches(feet, inches)
+      return feet * 12 + inches
     end
   end

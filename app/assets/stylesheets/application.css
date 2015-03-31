@@ -14,3 +14,19 @@
  *= require bootstrap.min.css
  *= require_self
  */
+body, html {
+  text-align: center
+}
+
+.center {
+  position: relative;
+  margin: 0 auto;
+}
+
+.form-control {
+  width:200px !important
+}
+
+.half {
+  width:100px !important;
+}
