@@ -1,4 +1,5 @@
   module GuessControllerHelper
+    # Linear Regression Model:
     def guess(heights, weights, genders, height_entry, weight_entry)
       @heights = heights
       @weights = weights
@@ -12,6 +13,12 @@
       else
         get_gender_val(height_entry.to_i, weight_entry.to_i)
       end
+    end
+
+    def get_gender_val(height, weight)
+      val = @b0 + (@b1 * height.to_i) + (@b2 * weight.to_i)
+      # Male is > 0, Female is < 0
+      return val > 0 ? 'Male' : 'Female'
     end
 
     def b0
@@ -51,12 +58,6 @@
     def mean(values)
       total = values.reduce(0) { |sum, x| x + sum }
       Float(total) / Float(values.length)
-    end
-
-    def get_gender_val(height, weight)
-      val = @b0 + (@b1 * height.to_i) + (@b2 * weight.to_i)
-      # Male is > 0, Female is < 0
-      return val > 0 ? 'Male' : 'Female'
     end
 
     def convert_gender_string(gender_string)

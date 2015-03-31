@@ -1,7 +1,9 @@
 <div class="guess">
-  <h5>My guess is:</h5>
-  <h3><%= @gender_guess %></h3>
-  <h5>Is this correct?</h5>
+  <div class="guess_text">
+    <h5>My guess is:</h5>
+    <h3><%= @gender_guess %></h3>
+    <h5>Is this correct?</h5>
+  </div>
 
   <%= button_to 'Yes', { action: 'correct', remote: true, height: @height, weight: @weight,
     guessed_gender: @gender_guess }, {:class => "btn btn-default btn-primary" } %>

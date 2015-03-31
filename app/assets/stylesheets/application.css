@@ -72,3 +72,7 @@ input {
 form {
   padding:10px;
 }
+
+.guess_text {
+  padding:5px;
+}

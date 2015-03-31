@@ -3,7 +3,7 @@ class GuessController < ApplicationController
 
 #GET
   def index
-
+    #render index file?
   end
 
 # POST
@@ -45,6 +45,7 @@ class GuessController < ApplicationController
     redirect_to results_path
   end
 
+#GET
   def results
     num_correct = Person.where(guess_correct:true).length
     total_num = Person.all.length
