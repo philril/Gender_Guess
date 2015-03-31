@@ -24,6 +24,7 @@ body, html {
 }
 
 .form-control {
+  border-radius:10px;
   width:200px !important;
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;

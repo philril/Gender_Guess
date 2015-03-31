@@ -61,9 +61,9 @@
     end
 
     def convert_gender_string(gender_string)
-      case gender_string.downcase
-      when "male" then return 1
-      when "female" then return -1
+      case gender_string
+      when "Male" then return 1
+      when "Female" then return -1
       end
     end
 

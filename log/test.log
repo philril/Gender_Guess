@@ -1257,3 +1257,507 @@ Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.9ms)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 125], ["gender", -1], ["created_at", "2015-03-30 20:23:37.959843"], ["updated_at", "2015-03-30 20:23:37.959843"]]
   [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"height"=>"78", "weight"=>"120"}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"feet"=>"6", "inches"=>"0", "weight"=>"120"}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"guess"=>{"feet"=>"6", "inches"=>"0", "weight"=>"120"}}
+  [1m[36m (1.3ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 406 Not Acceptable in 10ms (ActiveRecord: 1.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"feet"=>"6", "inches"=>"0", "weight"=>"120"}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"guess"=>{"feet"=>"6", "inches"=>"0", "weight"=>"120"}}
+  [1m[36m (0.8ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 406 Not Acceptable in 10ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"feet"=>"6", "inches"=>"0", "weight"=>"120"}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"feet"=>"6", "inches"=>"2", "weight"=>"123"}
+  [1m[36m (0.9ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (5.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as HTML
+  Parameters: {"guess"=>{"feet"=>"6", "inches"=>"2", "weight"=>"123"}}
+  [1m[36m (0.8ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+Completed 406 Not Acceptable in 10ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (7.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.8ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.6ms)
+Completed 200 OK in 23ms (Views: 15.4ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (4.3ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 16.3ms | ActiveRecord: 4.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 12.6ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 14.6ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 21ms (Views: 13.1ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.8ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 18.0ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (2.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 22.4ms | ActiveRecord: 2.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.9ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 25.9ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#correct as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (1.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.5ms)
+Completed 200 OK in 24ms (Views: 15.1ms | ActiveRecord: 2.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "gender"=>"Male"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 31ms (Views: 18.4ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (1.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.7ms)
+Completed 200 OK in 29ms (Views: 19.9ms | ActiveRecord: 2.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePeople (20150327180009)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "height" integer, "weight" integer, "gender" integer, "guess_correct" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150327180009"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 187], ["gender", 1], ["created_at", "2015-03-31 17:41:45.950625"], ["updated_at", "2015-03-31 17:41:45.950625"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 32], ["gender", 1], ["created_at", "2015-03-31 17:41:45.955639"], ["updated_at", "2015-03-31 17:41:45.955639"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 85], ["gender", 1], ["created_at", "2015-03-31 17:41:45.959770"], ["updated_at", "2015-03-31 17:41:45.959770"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 220], ["gender", 1], ["created_at", "2015-03-31 17:41:45.963664"], ["updated_at", "2015-03-31 17:41:45.963664"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 153], ["gender", 1], ["created_at", "2015-03-31 17:41:45.967801"], ["updated_at", "2015-03-31 17:41:45.967801"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 210], ["gender", 1], ["created_at", "2015-03-31 17:41:45.971040"], ["updated_at", "2015-03-31 17:41:45.971040"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 66], ["gender", 1], ["created_at", "2015-03-31 17:41:45.974021"], ["updated_at", "2015-03-31 17:41:45.974021"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 204], ["gender", 1], ["created_at", "2015-03-31 17:41:45.977541"], ["updated_at", "2015-03-31 17:41:45.977541"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 67], ["gender", 1], ["created_at", "2015-03-31 17:41:45.983496"], ["updated_at", "2015-03-31 17:41:45.983496"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 78], ["weight", 165], ["gender", 1], ["created_at", "2015-03-31 17:41:45.987385"], ["updated_at", "2015-03-31 17:41:45.987385"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 124], ["gender", -1], ["created_at", "2015-03-31 17:41:45.990219"], ["updated_at", "2015-03-31 17:41:45.990219"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 155], ["gender", -1], ["created_at", "2015-03-31 17:41:45.993603"], ["updated_at", "2015-03-31 17:41:45.993603"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 123], ["gender", -1], ["created_at", "2015-03-31 17:41:45.996847"], ["updated_at", "2015-03-31 17:41:45.996847"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 124], ["gender", -1], ["created_at", "2015-03-31 17:41:46.000139"], ["updated_at", "2015-03-31 17:41:46.000139"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 163], ["gender", -1], ["created_at", "2015-03-31 17:41:46.003891"], ["updated_at", "2015-03-31 17:41:46.003891"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 122], ["gender", -1], ["created_at", "2015-03-31 17:41:46.006744"], ["updated_at", "2015-03-31 17:41:46.006744"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 136], ["gender", -1], ["created_at", "2015-03-31 17:41:46.012433"], ["updated_at", "2015-03-31 17:41:46.012433"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 155], ["gender", -1], ["created_at", "2015-03-31 17:41:46.015546"], ["updated_at", "2015-03-31 17:41:46.015546"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 118], ["gender", -1], ["created_at", "2015-03-31 17:41:46.019297"], ["updated_at", "2015-03-31 17:41:46.019297"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 165], ["gender", -1], ["created_at", "2015-03-31 17:41:46.022096"], ["updated_at", "2015-03-31 17:41:46.022096"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (1.0ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 17.3ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 14.6ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[35m (0.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 16.2ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 26ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 20ms (Views: 12.6ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 21ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
