@@ -1993,3 +1993,1124 @@ Processing by GuessController#results as HTML
   Rendered guess/results.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 13ms (Views: 2.4ms | ActiveRecord: 0.4ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.9ms)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 21ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 84ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.5ms)
+Completed 200 OK in 10ms (Views: 5.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 13ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.2ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 19ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 81ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 8ms (Views: 4.1ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 16ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 19ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (1.1ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 14ms (Views: 8.1ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 13ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 19ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 77ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (1.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 11.8ms | ActiveRecord: 2.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 20ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 138ms (Views: 8.1ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 16ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 75ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 19ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 76ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 16ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 76ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 26ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 267ms (Views: 4.2ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (5.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 12ms (Views: 6.7ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 21ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 81ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 4.9ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 19ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 82ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 24ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (1.1ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 87ms (Views: 3.0ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (1.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 11ms (Views: 4.9ms | ActiveRecord: 1.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 23ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 90ms (Views: 4.3ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (1.5ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 4.6ms | ActiveRecord: 2.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 15ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 22ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 88ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.8ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 4.5ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 19ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 80ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 5.1ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 21ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 97ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 12ms (Views: 4.7ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 15ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 24ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 142ms (Views: 4.0ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 4.7ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 20ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 192ms (Views: 5.7ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.8ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 15ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 32ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 86ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#index as HTML
+  Rendered guess/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GuessController#make_guess as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123}}
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/make_guess.js.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#correct as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+Redirected to http://test.host/guess/results
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#incorrect as JS
+  Parameters: {"guess"=>{"feet"=>6, "inches"=>2, "weight"=>123, "guessed_gender"=>"Male"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Redirected to http://test.host/guess/results
+Completed 302 Found in 19ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 97ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
