@@ -3,6 +3,13 @@ require 'spec_helper'
 
 RSpec.describe GuessController, type: :controller do
 
+  describe "GET index" do
+    it "renders index page" do
+      get :index
+      expect(response).to have_http_status(:success)
+    end
+  end
+
   describe "POST make_guess" do
     it "makes a guess" do
       post :make_guess,  :format => 'js', guess: {feet: 6, inches: 2, weight: 123}
@@ -13,7 +20,7 @@ RSpec.describe GuessController, type: :controller do
   describe "POST correct" do
     it "Correct should redirect to results" do
       post :correct, :format => 'js', guess: {feet: 6, inches: 2, weight: 123, guessed_gender: "Male"}
-      expect(response).to be_redirect
+      expect(response).to redirect_to(results_url)
     end
   end
 

@@ -1,11 +1,6 @@
 class GuessController < ApplicationController
   include GuessControllerHelper
 
-#GET
-  def index
-    #render index file?
-  end
-
 # POST
   def make_guess
     heights = Person.pluck(:height)
