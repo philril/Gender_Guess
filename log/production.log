@@ -1,0 +1,4 @@
+D, [2015-03-30T09:37:58.031754 #30785] DEBUG -- :   [1m[36mPerson Load (0.7ms)[0m  [1mSELECT "people".* FROM "people"[0m
+E, [2015-03-30T09:37:58.032235 #30785] ERROR -- : SQLite3::SQLException: no such table: people: SELECT "people".* FROM "people"
+D, [2015-03-31T13:23:54.047158 #7794] DEBUG -- :   [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people"[0m
+E, [2015-03-31T13:23:54.048151 #7794] ERROR -- : SQLite3::SQLException: no such table: people: SELECT "people".* FROM "people"
