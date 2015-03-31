@@ -144,6 +144,9 @@ GEM
       rdoc (~> 4.0)
     shotgun (0.9.1)
       rack (>= 1.0)
+    simple_form (3.1.0)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
     spring (1.3.3)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -187,6 +190,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   shotgun
+  simple_form
   spring
   sqlite3
   turbolinks

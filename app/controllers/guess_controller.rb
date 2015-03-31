@@ -1,5 +1,3 @@
-require 'json'
-
 class GuessController < ApplicationController
   include GuessControllerHelper
 
@@ -14,9 +12,8 @@ class GuessController < ApplicationController
     weights = Person.pluck(:weight)
     genders = Person.pluck(:gender)
 
-    # @height = params[:height]
-    @height = convert_feet_inches(params[:feet], params[:inches])
-    @weight = params[:weight]
+    @height = convert_feet_inches(params[:guess][:feet], params[:guess][:inches])
+    @weight = params[:guess][:weight]
     @gender_guess = guess(heights, weights, genders, @height, @weight)
 
     respond_to do |format|
@@ -25,6 +22,8 @@ class GuessController < ApplicationController
   end
 
 #POST
+
+# REFACTOR WITH STRONG PARAMS
   def correct
     @person = Person.new(
       height: params[:height],
@@ -47,8 +46,9 @@ class GuessController < ApplicationController
   end
 
   def results
-    @num_correct = Person.where(guess_correct:true).length
-    @total_num = Person.all.length
+    num_correct = Person.where(guess_correct:true).length
+    total_num = Person.all.length
+    @percent = ((num_correct / total_num) * 100).floor
   end
 
 end

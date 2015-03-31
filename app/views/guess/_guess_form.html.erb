@@ -1,7 +1,8 @@
-<%= form_for :guess, url: make_guess_path, remote: true, html: {class: "input-group center"} do |f| %>
-  <%= f.text_field :feet, class: "form-control half", placeholder: "Height (feet)" %>
-  <%= f.text_field :inches, class: "form-control half", placeholder: "Height (inches)" %>
-  <br>
-  <%= f.text_field :weight, class: "form-control", placeholder: "Weight (pounds)" %>
-  <%= f.submit "Submit", class: "btn btn-default btn-primary"%>
+<div class="entry">
+  <%= simple_form_for :guess, url: make_guess_path, remote: true, html: {class: "input-group center"} do |f| %>
+    <%= f.input :feet, input_html: {class: "form-control half"}, placeholder: "Height (feet)", maxlength: "1", label: false %>
+    <%= f.input :inches, input_html: {class: "form-control half"}, placeholder: "Height (inches)", maxlength: "2", label: false %>
+    <%= f.input :weight, input_html: {class: "form-control"}, placeholder: "Weight (pounds)", maxlength: "3", label: false %>
+    <%= f.submit "Submit", class: "btn btn-default btn-primary"%>
 <% end %>
+</div>

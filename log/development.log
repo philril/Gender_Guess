@@ -9792,3 +9792,2174 @@ Processing by GuessController#index as HTML
   Rendered guess/_guess_form.html.erb (81.9ms)
   Rendered guess/index.html.erb within layouts/application (94.4ms)
 Completed 200 OK in 466ms (Views: 445.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 17:40:38 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 17:40:39 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 17:40:39 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 17:40:39 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 17:40:39 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 17:40:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 17:40:45 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 17:40:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 17:41:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (21.5ms)
+  Rendered guess/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 465ms (Views: 441.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 17:41:28 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 17:41:28 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 17:41:28 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 17:41:29 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 17:41:29 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 17:41:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 17:41:42 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 17:41:43 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 17:42:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"200"}, "commit"=>"Submit"}
+  [1m[35m (1.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 1.8ms)
+
+NoMethodError (undefined method `*' for nil:NilClass):
+  app/helpers/guess_controller_helper.rb:69:in `convert_feet_inches'
+  app/controllers/guess_controller.rb:18:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (48.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (6.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (62.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (122.6ms)
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 17:42:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as */*
+  Parameters: {"weight"=>"180", "feet"=>"6", "inches"=>"2"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.2ms)
+  Rendered guess/make_guess.js.erb (9.7ms)
+Completed 200 OK in 49ms (Views: 24.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 17:43:49 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (14.5ms)
+  Rendered guess/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 582ms (Views: 556.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 17:44:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as */*
+  Parameters: {"weight"=>"180", "feet"=>"6", "inches"=>"5"}
+  [1m[35m (0.9ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (3.4ms)
+  Rendered guess/make_guess.js.erb (20.2ms)
+Completed 200 OK in 126ms (Views: 43.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 17:44:13 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 17:44:15 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 17:44:15 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 17:44:15 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 17:44:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 17:44:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 17:44:29 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 17:44:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 17:45:22 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"200"}, "commit"=>"Submit"}
+  [1m[35m (0.6ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.0ms)
+
+NoMethodError (undefined method `*' for nil:NilClass):
+  app/helpers/guess_controller_helper.rb:69:in `convert_feet_inches'
+  app/controllers/guess_controller.rb:18:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (44.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (40.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (91.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 17:47:22 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 17:47:23 -0700
+  Rendered guess/_guess_form.html.erb (13.7ms)
+  Rendered guess/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 463ms (Views: 441.7ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as */*
+  Parameters: {"weight"=>"180", "feet"=>"6", "inches"=>"5"}
+  [1m[35m (3.8ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (4.8ms)
+  Rendered guess/make_guess.js.erb (12.7ms)
+Completed 200 OK in 280ms (Views: 111.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 17:47:38 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 17:47:39 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 17:47:39 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 17:47:39 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 17:47:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 17:47:40 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 17:47:48 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 17:47:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 17:47:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"3", "weight"=>"170"}, "commit"=>"Submit"}
+  [1m[35m (13.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.7ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 14.3ms)
+
+NoMethodError (undefined method `*' for nil:NilClass):
+  app/helpers/guess_controller_helper.rb:69:in `convert_feet_inches'
+  app/controllers/guess_controller.rb:18:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (37.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (33.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (84.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 17:49:43 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (12.1ms)
+  Rendered guess/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 434ms (Views: 417.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 17:50:00 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 17:50:01 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 17:50:01 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 17:50:01 -0700
+
+
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 17:50:01 -0700
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 17:50:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 17:50:08 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 17:50:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 17:50:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"134"}, "commit"=>"Submit"}
+  [1m[35m (1.8ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 2.3ms)
+
+NoMethodError (undefined method `*' for nil:NilClass):
+  app/helpers/guess_controller_helper.rb:69:in `convert_feet_inches'
+  app/controllers/guess_controller.rb:18:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (38.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (34.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (84.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 17:52:04 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (17.0ms)
+  Rendered guess/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 583ms (Views: 560.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 17:52:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as */*
+  Parameters: {"weight"=>"180", "feet"=>"6", "inches"=>"5"}
+  [1m[35m (5.7ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.5ms)
+  Rendered guess/make_guess.js.erb (10.4ms)
+Completed 200 OK in 145ms (Views: 63.0ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 17:52:19 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 17:52:19 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 17:52:19 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 17:52:19 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 17:52:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 17:52:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 17:52:26 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 17:52:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 17:52:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `*' for nil:NilClass):
+  app/helpers/guess_controller_helper.rb:69:in `convert_feet_inches'
+  app/controllers/guess_controller.rb:19:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (42.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (32.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (75.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 17:53:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (16.6ms)
+  Rendered guess/index.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 335ms (Views: 317.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 17:53:20 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 17:53:20 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 17:53:20 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 17:53:20 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 17:53:20 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 17:53:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (41.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 17:53:26 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 17:53:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 17:53:40 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.1ms)
+
+NoMethodError (undefined method `*' for nil:NilClass):
+  app/helpers/guess_controller_helper.rb:69:in `convert_feet_inches'
+  app/controllers/guess_controller.rb:19:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (49.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (36.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (87.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 17:58:11 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (11.2ms)
+  Rendered guess/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 333ms (Views: 315.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 17:58:25 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 17:58:26 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 17:58:26 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 17:58:26 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 17:58:27 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 17:58:27 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 17:58:32 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 17:58:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 17:58:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `*' for nil:NilClass):
+  app/helpers/guess_controller_helper.rb:69:in `convert_feet_inches'
+  app/controllers/guess_controller.rb:19:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (44.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (41.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (101.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 18:29:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (78.2ms)
+  Rendered guess/index.html.erb within layouts/application (87.3ms)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x007f9966a5cb78>):
+    1: <%= form_for :guess, url: make_guess_path, remote: true, html: {class: "input-group center"} do |f| %>
+    2:   <%= f.input :feet, input_html: {class: "form-control"}, placeholder: "Height (feet)" %>
+    3:   <%= f.input :inches, input_html: {class: "form-control"}, placeholder: "Height (inches)" %>
+    4:   <%= f.input :weight, input_html: {class: "form-control"}, placeholder: "Weight (pounds)" %>
+    5:   <%= f.submit "Submit", class: "btn btn-default btn-primary"%>
+  app/views/guess/_guess_form.html.erb:2:in `block in _app_views_guess__guess_form_html_erb___837425031462796906_70148414400620'
+  app/views/guess/_guess_form.html.erb:1:in `_app_views_guess__guess_form_html_erb___837425031462796906_70148414400620'
+  app/views/guess/index.html.erb:3:in `_app_views_guess_index_html_erb__4398195904380993171_70148414176200'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (35.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (77.8ms)
+
+
+Started POST "/console/repl_sessions/4b989ca5976aafb0420f7ec3150d6b60/trace" for 127.0.0.1 at 2015-03-30 18:29:46 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 18:30:06 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (697.6ms)
+  Rendered guess/index.html.erb within layouts/application (710.7ms)
+Completed 200 OK in 1143ms (Views: 1102.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 18:30:20 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 18:30:20 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 18:30:20 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 18:30:20 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 18:30:21 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 18:30:21 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 18:30:25 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 18:30:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 18:31:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"4", "weight"=>"200"}, "commit"=>"Submit"}
+  [1m[35m (1.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.7ms)
+
+NoMethodError (undefined method `*' for nil:NilClass):
+  app/helpers/guess_controller_helper.rb:69:in `convert_feet_inches'
+  app/controllers/guess_controller.rb:19:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (40.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (34.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (81.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 18:32:35 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (190.8ms)
+  Rendered guess/index.html.erb within layouts/application (201.6ms)
+Completed 500 Internal Server Error in 239ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `text' for #<SimpleForm::FormBuilder:0x007f99668e5cb8>):
+    1: <%= simple_form_for :guess, url: make_guess_path, remote: true, html: {class: "input-group center"} do |f| %>
+    2:   <%= f.text :feet, input_html: {class: "form-control"}, placeholder: "Height (feet)" %>
+    3:   <%= f.text :inches, input_html: {class: "form-control"}, placeholder: "Height (inches)" %>
+    4:   <%= f.text :weight, input_html: {class: "form-control"}, placeholder: "Weight (pounds)" %>
+    5:   <%= f.submit "Submit", class: "btn btn-default btn-primary"%>
+  app/views/guess/_guess_form.html.erb:2:in `block in _app_views_guess__guess_form_html_erb___837425031462796906_70148414324460'
+  app/views/guess/_guess_form.html.erb:1:in `_app_views_guess__guess_form_html_erb___837425031462796906_70148414324460'
+  app/views/guess/index.html.erb:3:in `_app_views_guess_index_html_erb__4398195904380993171_70148397968680'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (34.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (79.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 18:33:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (522.0ms)
+  Rendered guess/index.html.erb within layouts/application (532.8ms)
+Completed 200 OK in 846ms (Views: 829.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 18:33:25 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 18:33:26 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 18:33:26 -0700
+
+
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 18:33:26 -0700
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 18:33:26 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 18:33:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 18:33:30 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 18:33:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 18:36:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (474.8ms)
+  Rendered guess/index.html.erb within layouts/application (487.9ms)
+Completed 200 OK in 897ms (Views: 878.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 18:36:55 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 18:36:56 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 18:36:56 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 18:36:56 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 18:36:56 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 18:36:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (6.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 18:37:05 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 18:37:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 18:37:17 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (1.0ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.4ms)
+
+NoMethodError (undefined method `*' for nil:NilClass):
+  app/helpers/guess_controller_helper.rb:69:in `convert_feet_inches'
+  app/controllers/guess_controller.rb:19:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (42.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (101.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (149.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 18:38:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (559.2ms)
+  Rendered guess/index.html.erb within layouts/application (567.6ms)
+Completed 200 OK in 1017ms (Views: 1000.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 18:38:49 -0700
+
+
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 18:38:50 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 18:38:50 -0700
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 18:38:50 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 18:38:50 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 18:38:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (5.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 18:38:56 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 18:38:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 18:39:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (407.2ms)
+  Rendered guess/index.html.erb within layouts/application (417.6ms)
+Completed 200 OK in 657ms (Views: 641.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 18:39:42 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 18:39:42 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 18:39:42 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 18:39:42 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 18:39:42 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 18:39:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (72.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 18:39:47 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 18:39:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 18:39:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"200"}, "commit"=>"Submit"}
+  [1m[35m (0.6ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.2ms)
+  Rendered guess/make_guess.js.erb (10.5ms)
+Completed 200 OK in 45ms (Views: 21.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=77&remote=true&weight=200" for 127.0.0.1 at 2015-03-30 18:40:07 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"L0kDzMgsMZm8dGunGkmsZwMtUcmWcCEltFgv8sq/agM24fQ6fO0KBXQun5AgqNPgCiEkYU2/czfElVoe/X0EJw==", "guessed_gender"=>"Female", "height"=>"77", "remote"=>"true", "weight"=>"200"}
+Redirected to http://localhost:9393/guess/results
+Completed 302 Found in 42ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 18:40:10 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 307ms (Views: 260.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 18:40:22 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 18:40:22 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 18:40:22 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 18:40:22 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 18:40:22 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 18:40:22 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 18:40:28 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 18:40:28 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/" for 127.0.0.1 at 2015-03-30 20:25:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.6.0) lib/rack/commonlogger.rb:33:in `call'
+  shotgun (0.9.1) lib/shotgun/loader.rb:86:in `proceed_as_child'
+  shotgun (0.9.1) lib/shotgun/loader.rb:31:in `call!'
+  shotgun (0.9.1) lib/shotgun/loader.rb:18:in `call'
+  shotgun (0.9.1) lib/shotgun/favicon.rb:12:in `call'
+  shotgun (0.9.1) lib/shotgun/static.rb:14:in `call'
+  rack (1.6.0) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.0) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.0) lib/rack/urlmap.rb:50:in `call'
+  rack (1.6.0) lib/rack/builder.rb:153:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (102.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (20.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (339.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (47.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (96.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 20:27:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (563.3ms)
+  Rendered guess/index.html.erb within layouts/application (573.5ms)
+Completed 200 OK in 985ms (Views: 968.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 20:28:15 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 20:28:16 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 20:28:16 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 20:28:16 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 20:28:16 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 20:28:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 20:28:32 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 20:28:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (7.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 20:29:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (479.7ms)
+  Rendered guess/index.html.erb within layouts/application (487.4ms)
+Completed 200 OK in 808ms (Views: 791.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 20:29:16 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 20:29:17 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 20:29:17 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 20:29:17 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 20:29:17 -0700
+
+
+Started GET "/assets/application-2b3336f46f7a8b8780c46732e20cafe5.css?body=1" for 127.0.0.1 at 2015-03-30 20:29:17 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 20:29:26 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 20:29:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 20:31:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (348.6ms)
+  Rendered guess/index.html.erb within layouts/application (359.9ms)
+Completed 200 OK in 731ms (Views: 712.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 20:32:12 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 20:32:13 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 20:32:13 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 20:32:13 -0700
+
+
+Started GET "/assets/application-b95e0cd6e7bc10398305eb307fcdb7dd.css?body=1" for 127.0.0.1 at 2015-03-30 20:32:13 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 20:32:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (19.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 20:32:22 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 20:32:22 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 20:37:55 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (397.2ms)
+  Rendered guess/index.html.erb within layouts/application (468.3ms)
+Completed 200 OK in 810ms (Views: 777.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 20:38:12 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 20:38:13 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 20:38:13 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 20:38:13 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 20:38:13 -0700
+
+
+Started GET "/assets/application-b95e0cd6e7bc10398305eb307fcdb7dd.css?body=1" for 127.0.0.1 at 2015-03-30 20:38:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 20:38:23 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 20:38:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 20:38:28 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (558.7ms)
+  Rendered guess/index.html.erb within layouts/application (579.3ms)
+Completed 200 OK in 1002ms (Views: 911.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-63b1026e10c6b7c8e0979014fc16ca3d.css?body=1" for 127.0.0.1 at 2015-03-30 20:38:47 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 20:38:47 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 20:38:47 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 20:38:48 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 20:38:48 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 20:38:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (81.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 20:38:57 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 20:38:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 20:40:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (436.7ms)
+  Rendered guess/index.html.erb within layouts/application (448.2ms)
+Completed 200 OK in 879ms (Views: 861.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 20:40:35 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 20:40:36 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 20:40:36 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 20:40:36 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 20:40:36 -0700
+
+
+Started GET "/assets/application-63b1026e10c6b7c8e0979014fc16ca3d.css?body=1" for 127.0.0.1 at 2015-03-30 20:40:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (27.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 20:40:42 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 20:40:43 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 20:47:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"", "inches"=>"", "weight"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.7ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (3.2ms)
+  Rendered guess/make_guess.js.erb (16.7ms)
+Completed 200 OK in 62ms (Views: 33.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 20:48:55 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (409.7ms)
+  Rendered guess/index.html.erb within layouts/application (420.0ms)
+Completed 200 OK in 908ms (Views: 875.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-0b07f544888aa08a92e1307c7348cf5e.css?body=1" for 127.0.0.1 at 2015-03-30 20:49:11 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 20:49:12 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 20:49:12 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 20:49:12 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 20:49:12 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 20:49:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 20:49:18 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 20:49:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 20:52:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"", "inches"=>"", "weight"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.4ms)
+  Rendered guess/make_guess.js.erb (10.5ms)
+Completed 200 OK in 111ms (Views: 86.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 20:56:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (391.3ms)
+  Rendered guess/index.html.erb within layouts/application (403.3ms)
+Completed 200 OK in 768ms (Views: 748.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 20:56:35 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 20:56:37 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 20:56:37 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 20:56:37 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 20:56:37 -0700
+
+
+Started GET "/assets/application-6668994ca76be5f1431d77d34f15d628.css?body=1" for 127.0.0.1 at 2015-03-30 20:56:37 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 20:56:46 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 20:56:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 21:01:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (354.8ms)
+  Rendered guess/index.html.erb within layouts/application (366.3ms)
+Completed 200 OK in 839ms (Views: 822.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:02:04 -0700
+
+
+Started GET "/assets/application-2db8f6f04d4f1c4f146ee6d5f23fa0d3.css?body=1" for 127.0.0.1 at 2015-03-30 21:02:04 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:02:05 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 21:02:05 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 21:02:05 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 21:02:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (3.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 21:02:12 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 21:02:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 21:05:54 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"200"}, "commit"=>"Submit"}
+  [1m[35m (0.7ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.3ms)
+  Rendered guess/make_guess.js.erb (18.5ms)
+Completed 200 OK in 62ms (Views: 37.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 21:08:17 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (346.8ms)
+  Rendered guess/index.html.erb within layouts/application (357.8ms)
+Completed 200 OK in 755ms (Views: 738.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:08:34 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 21:08:36 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:08:36 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 21:08:36 -0700
+
+
+Started GET "/assets/application-88d40900348e9a1882ebc373536666be.css?body=1" for 127.0.0.1 at 2015-03-30 21:08:36 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 21:08:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 21:08:45 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 21:08:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 21:10:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"200"}, "commit"=>"Submit"}
+  [1m[35m (1.6ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.7ms)
+  Rendered guess/make_guess.js.erb (85.7ms)
+Completed 200 OK in 133ms (Views: 107.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 21:11:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (257.4ms)
+  Rendered guess/index.html.erb within layouts/application (321.7ms)
+Completed 200 OK in 666ms (Views: 649.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:11:59 -0700
+
+
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 21:12:00 -0700
+Started GET "/assets/application-58974a17ffecb2e102e936df6bfb7f95.css?body=1" for 127.0.0.1 at 2015-03-30 21:12:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (26.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:12:00 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 21:12:00 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 21:12:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 21:12:05 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 21:12:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 21:12:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"3", "weight"=>"200"}, "commit"=>"Submit"}
+  [1m[35m (0.6ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.3ms)
+  Rendered guess/make_guess.js.erb (10.2ms)
+Completed 200 OK in 100ms (Views: 77.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 21:13:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (335.9ms)
+  Rendered guess/index.html.erb within layouts/application (346.9ms)
+Completed 200 OK in 721ms (Views: 703.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-6950ce5ad633e261a7b261abbacc44f8.css?body=1" for 127.0.0.1 at 2015-03-30 21:14:12 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:14:12 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 21:14:12 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 21:14:13 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 21:14:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:14:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 21:14:18 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 21:14:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 21:15:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"4", "inches"=>"11", "weight"=>"200"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (5.3ms)
+  Rendered guess/make_guess.js.erb (28.6ms)
+Completed 200 OK in 89ms (Views: 53.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/guess/correct?guessed_gender=Male&height=59&remote=true&weight=200" for 127.0.0.1 at 2015-03-30 21:17:07 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"lHJK8Jz3JEWlbuSv7dQNFmxsTsyQ0eTCsy2dTRqnmbCN2r0GKDYf2W00EJjXNXKRZWA7ZEsettDD4OihLWX3lA==", "guessed_gender"=>"Male", "height"=>"59", "remote"=>"true", "weight"=>"200"}
+Redirected to http://localhost:9393/guess/results
+Completed 302 Found in 32ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:17:11 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.8ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 1.5ms)
+
+SyntaxError (/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/results.html.erb:3: syntax error, unexpected ','
+...=> 'index'}, :method => :get, , {:class => "btn btn-default ...
+...                               ^):
+  app/views/guess/results.html.erb:3: syntax error, unexpected ','
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (37.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (90.2ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:17:55 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (8.1ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 9.0ms)
+
+SyntaxError (/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/results.html.erb:3: syntax error, unexpected ')', expecting =>
+...btn btn-default btn-primary" });@output_buffer.safe_append='
+...                               ^
+/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/results.html.erb:5: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/results.html.erb:7: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/guess/results.html.erb:3: syntax error, unexpected ')', expecting =>
+  app/views/guess/results.html.erb:5: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/guess/results.html.erb:7: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (80.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (129.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (57.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (2.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (272.3ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:20:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (2.1ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 3.0ms)
+
+SyntaxError (/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/results.html.erb:3: syntax error, unexpected ',', expecting =>
+... => :get, {:action => 'index'}, {:class => "btn btn-default ...
+...                               ^):
+  app/views/guess/results.html.erb:3: syntax error, unexpected ',', expecting =>
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (29.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (2.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (64.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (282.2ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:21:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (6.4ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 7.3ms)
+
+SyntaxError (/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/results.html.erb:3: syntax error, unexpected ':', expecting ')'
+...ppend=( button_to 'Try Again' :method => :get, {:action => '...
+...                               ^
+/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/results.html.erb:3: syntax error, unexpected ',', expecting ')'
+... => :get, {:action => 'index'}, {:class => "btn btn-default ...
+...                               ^):
+  app/views/guess/results.html.erb:3: syntax error, unexpected ':', expecting ')'
+  app/views/guess/results.html.erb:3: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (2.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (44.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (153.9ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:22:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.9ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 1.6ms)
+
+SyntaxError (/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/results.html.erb:3: syntax error, unexpected ')', expecting =>
+...=> :get, {:action => 'index'} );@output_buffer.safe_append='
+...                               ^
+/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/results.html.erb:5: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/results.html.erb:7: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/guess/results.html.erb:3: syntax error, unexpected ')', expecting =>
+  app/views/guess/results.html.erb:5: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/guess/results.html.erb:7: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (36.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (85.3ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:24:04 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (2.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 2.9ms)
+
+SyntaxError (/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/results.html.erb:3: syntax error, unexpected ',', expecting =>
+... => :get, {:action => 'index'}, {:class => "btn btn-default ...
+...                               ^):
+  app/views/guess/results.html.erb:3: syntax error, unexpected ',', expecting =>
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (41.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (92.8ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:25:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (2.5ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 407ms (Views: 289.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 21:25:40 -0700
+
+
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:25:41 -0700
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 21:25:41 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:25:41 -0700
+
+
+Started GET "/assets/application-aa9712dfa9fad20873c2e76a3acb19b9.css?body=1" for 127.0.0.1 at 2015-03-30 21:25:41 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 21:25:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (38.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 21:25:49 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 21:25:49 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 21:32:53 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (450.6ms)
+  Rendered guess/index.html.erb within layouts/application (471.0ms)
+Completed 200 OK in 973ms (Views: 936.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 21:33:11 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (314.5ms)
+  Rendered guess/index.html.erb within layouts/application (321.9ms)
+Completed 200 OK in 596ms (Views: 576.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:33:28 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 21:33:28 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 21:33:28 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 21:33:28 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:33:28 -0700
+
+
+Started GET "/assets/application-aa9712dfa9fad20873c2e76a3acb19b9.css?body=1" for 127.0.0.1 at 2015-03-30 21:33:28 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 21:33:36 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 21:33:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-aa9712dfa9fad20873c2e76a3acb19b9.css?body=1" for 127.0.0.1 at 2015-03-30 21:34:20 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:34:20 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:34:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 21:35:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"11", "weight"=>"200"}, "commit"=>"Submit"}
+  [1m[35m (1.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.4ms)
+  Rendered guess/make_guess.js.erb (11.7ms)
+Completed 200 OK in 56ms (Views: 28.1ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=83&remote=true&weight=200" for 127.0.0.1 at 2015-03-30 21:39:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"6hWp+Unaqnk7hah66duyDNVz2gwhja8Pgl1d1T/OOxHzvV4P/RuR5fPfXE3TOs2L3H+vpPpC/R3ykCg5CAxVNQ==", "guessed_gender"=>"Female", "height"=>"83", "remote"=>"true", "weight"=>"200"}
+Redirected to http://localhost:9393/guess/results
+Completed 302 Found in 32ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:39:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.8ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 466ms (Views: 418.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 21:39:37 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 21:39:38 -0700
+
+
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 21:39:38 -0700
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:39:38 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:39:38 -0700
+
+
+Started GET "/assets/application-27a544485ad47044e915dcfed91e9d3c.css?body=1" for 127.0.0.1 at 2015-03-30 21:39:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 21:39:44 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 21:39:44 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:41:35 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.8ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people"[0m
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.7ms)
+
+NoMethodError (undefined method `to_nearest_i' for 100:Fixnum):
+  app/controllers/guess_controller.rb:51:in `results'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (39.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (87.4ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:42:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (1.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 374ms (Views: 324.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:42:43 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:42:44 -0700
+
+
+Started GET "/assets/application-27a544485ad47044e915dcfed91e9d3c.css?body=1" for 127.0.0.1 at 2015-03-30 21:42:44 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 21:42:44 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 21:42:44 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 21:42:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 21:42:50 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 21:42:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 21:42:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (249.3ms)
+  Rendered guess/index.html.erb within layouts/application (256.8ms)
+Completed 200 OK in 546ms (Views: 529.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 21:43:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"2", "weight"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.4ms)
+  Rendered guess/make_guess.js.erb (9.1ms)
+Completed 200 OK in 46ms (Views: 19.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 21:43:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"2", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.4ms)
+  Rendered guess/make_guess.js.erb (9.4ms)
+Completed 200 OK in 43ms (Views: 20.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 21:44:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (319.9ms)
+  Rendered guess/index.html.erb within layouts/application (329.3ms)
+Completed 200 OK in 672ms (Views: 655.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:44:20 -0700
+
+
+Started GET "/assets/application-8898c92528f328f691393b9e4ad5dd64.css?body=1" for 127.0.0.1 at 2015-03-30 21:44:21 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 21:44:21 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:44:21 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 21:44:21 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 21:44:21 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 21:44:26 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 21:44:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 21:44:37 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"11", "weight"=>"210"}, "commit"=>"Submit"}
+  [1m[35m (0.7ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.1ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.3ms)
+  Rendered guess/make_guess.js.erb (10.2ms)
+Completed 200 OK in 48ms (Views: 23.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/guess/incorrect?guessed_gender=Female&height=83&remote=true&weight=210" for 127.0.0.1 at 2015-03-30 21:44:44 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#incorrect as HTML
+  Parameters: {"authenticity_token"=>"KOYE3ZvmL/awo0gBaOmhd5afUT3enmpvYMbr62ldVOQxTvMrLycUanj5vDZSCN7wn5MklQVROH0QC54HXp86wA==", "guessed_gender"=>"Female", "height"=>"83", "remote"=>"true", "weight"=>"210"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 83], ["weight", 210], ["gender", -1], ["guess_correct", "f"], ["created_at", "2015-03-31 04:44:44.828136"], ["updated_at", "2015-03-31 04:44:44.828136"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:9393/guess/results
+Completed 302 Found in 44ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:44:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 311ms (Views: 267.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:44:59 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 21:44:59 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 21:44:59 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 21:44:59 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:44:59 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 21:44:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 21:45:04 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 21:45:11 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (308.0ms)
+  Rendered guess/index.html.erb within layouts/application (315.5ms)
+Completed 200 OK in 586ms (Views: 569.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-30 21:45:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"5", "inches"=>"11", "weight"=>"190"}, "commit"=>"Submit"}
+  [1m[35m (0.7ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.2ms)
+  Rendered guess/make_guess.js.erb (8.6ms)
+Completed 200 OK in 47ms (Views: 19.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/incorrect?guessed_gender=Female&height=71&remote=true&weight=190" for 127.0.0.1 at 2015-03-30 21:45:44 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#incorrect as HTML
+  Parameters: {"authenticity_token"=>"vHIV9jd1B0yrEQxWiga96HYjn1GL21G/1up5KBRT/wql2uIAg7Q80GNL+GGw58Jvfy/q+VAUA62mJwzEI5GRLg==", "guessed_gender"=>"Female", "height"=>"71", "remote"=>"true", "weight"=>"190"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 190], ["gender", -1], ["guess_correct", "f"], ["created_at", "2015-03-31 04:45:44.466931"], ["updated_at", "2015-03-31 04:45:44.466931"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:9393/guess/results
+Completed 302 Found in 44ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-30 21:45:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 303ms (Views: 255.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-30 21:45:59 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 21:46:00 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-30 21:46:00 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-30 21:46:00 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-30 21:46:00 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-30 21:46:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-30 21:46:06 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 21:46:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (314.2ms)
+  Rendered guess/index.html.erb within layouts/application (324.5ms)
+Completed 200 OK in 626ms (Views: 609.6ms | ActiveRecord: 0.0ms)

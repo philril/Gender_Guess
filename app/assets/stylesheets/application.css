@@ -24,9 +24,51 @@ body, html {
 }
 
 .form-control {
-  width:200px !important
+  width:200px !important;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 0px;
 }
 
 .half {
   width:100px !important;
+}
+
+.entry {
+  border: 1px solid gray;
+  background: gray;
+  border-radius: 10px;
+  width: 23%;
+  margin: 0 auto;
+}
+
+input {
+  position: relative;
+  margin: 0 auto;
+  border-radius:5px;
+}
+
+.guess {
+  background:lightgray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn-primary {
+  width:71px;
+  margin:3px;
+}
+
+.results {
+  position: relative;
+  margin: 0 auto;
+  padding:10px;
+}
+
+form {
+  padding:10px;
 }

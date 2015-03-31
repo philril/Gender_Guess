@@ -10,7 +10,7 @@
       if @heights.length != @weights.length
         raise "Unbalanced data"
       else
-        get_gender_val(height_entry, weight_entry)
+        get_gender_val(height_entry.to_i, weight_entry.to_i)
       end
     end
 
@@ -55,6 +55,7 @@
 
     def get_gender_val(height, weight)
       val = @b0 + (@b1 * height.to_i) + (@b2 * weight.to_i)
+      # Male is > 0, Female is < 0
       return val > 0 ? 'Male' : 'Female'
     end
 
@@ -66,6 +67,6 @@
     end
 
     def convert_feet_inches(feet, inches)
-      return feet * 12 + inches
+      return feet.to_i * 12 + inches.to_i
     end
   end

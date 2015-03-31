@@ -1,4 +1,5 @@
-<div class="center">
-  <h4>I've guessed <%= @num_correct %> correct out of <%= @total_num %> total guesses </h4>
-  <%= button_to 'Try Again', action: 'index'%>
+<div class="results">
+  <h4>I have <%= @percent %> percent guess success rate</h4>
+  <h5>Try again?</h5>
+  <%= link_to 'Retry', {:action => 'index'}, {:class => "btn btn-default btn-primary" } %>
 </div>
