@@ -3,12 +3,16 @@ class GuessController < ApplicationController
 
 # POST
   def make_guess
+    # Guess based upon linear regression calculation in helper methods
+
+    # Get all heights, weights, and genders to base guess upon:
     heights = Person.pluck(:height)
     weights = Person.pluck(:weight)
     genders = Person.pluck(:gender)
 
     @height = convert_feet_inches(params[:guess][:feet], params[:guess][:inches])
     @weight = params[:guess][:weight]
+
     @gender_guess = guess(heights, weights, genders, @height, @weight)
 
     respond_to do |format|
@@ -17,24 +21,26 @@ class GuessController < ApplicationController
   end
 
 #POST
-
-# REFACTOR WITH STRONG PARAMS
   def correct
-    @person = Person.new(
+    #If guess correct, store gender and correct guess in DB.
+    #To-do: Use strong params (with flip_gender and convert_gender_string methods built in somehow)
+    Person.new(
       height: params[:height],
       weight: params[:weight],
-      gender: convert_gender_string(params[:guessed_gender]),
-      guess_correct: true
+      gender: convert_gender_string(params[:gender]),#convert string to -1/1 to store.
+      guess_correct: false
     )
     redirect_to results_path
   end
 
 # POST
   def incorrect
-    Person.create(
+    #If incorrect, switch gender to store correct gender in DB.
+    #To-do: Use strong params (with flip_gender and convert_gender_string methods built in somehow)
+    Person.new(
       height: params[:height],
       weight: params[:weight],
-      gender: convert_gender_string(params[:guessed_gender]),
+      gender: flip_gender(params[:gender]),#convert string to -1/1 to store.
       guess_correct: false
     )
     redirect_to results_path
@@ -42,9 +48,9 @@ class GuessController < ApplicationController
 
 #GET
   def results
-    num_correct = Person.where(guess_correct:true).length
-    total_num = Person.all.length
-    @percent = ((num_correct / total_num) * 100).floor
+    @num_correct = Person.where(guess_correct:true).length
+    @total_num = Person.where(guess_correct:!nil).length
+    @percent = ((@num_correct / @total_num) * 100).floor
   end
 
 end

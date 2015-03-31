@@ -1,6 +1,6 @@
 # Gender Guess
 
-Gender Guess is a simple app that guesses a users gender based on their entered height and weight.
+Gender Guess is a simple app that guesses a user's gender based on their entered height and weight. Gender Guess makes guesses based upon a liner regression calculation.
 
 ##### Built using the following technologies:
 - Ruby on Rails

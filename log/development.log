@@ -12731,3 +12731,1840 @@ Processing by GuessController#make_guess as JS
   Rendered guess/_new_guess.html.erb (2.5ms)
   Rendered guess/make_guess.js.erb (11.8ms)
 Completed 200 OK in 55ms (Views: 28.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 12:16:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (360.3ms)
+  Rendered guess/index.html.erb within layouts/application (368.7ms)
+Completed 200 OK in 762ms (Views: 740.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-31 12:16:37 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 12:16:38 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-31 12:16:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-31 12:16:39 -0700
+
+
+Started GET "/assets/application-a18b20facdc677aacd83d78ef6bf599e.css?body=1" for 127.0.0.1 at 2015-03-31 12:16:39 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-31 12:16:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-31 12:16:45 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-31 12:16:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-31 12:16:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"2", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.4ms)
+  Rendered guess/make_guess.js.erb (10.3ms)
+Completed 200 OK in 52ms (Views: 22.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=74&remote=true&weight=123" for 127.0.0.1 at 2015-03-31 12:17:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"+VtpdXlGDTpYZXUGrcpumJTtFfv0xoGtwpUF0HrUQ2zg856DzYc2ppA/gTGXKxEfneFgUy8J07+yWHA8TRYtSA==", "guessed_gender"=>"Female", "height"=>"74", "remote"=>"true", "weight"=>"123"}
+Completed 400 Bad Request in 27ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: person):
+  app/controllers/guess_controller.rb:42:in `person_params'
+  app/controllers/guess_controller.rb:22:in `correct'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (80.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (238.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 12:18:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (394.2ms)
+  Rendered guess/index.html.erb within layouts/application (476.9ms)
+Completed 200 OK in 742ms (Views: 724.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-31 12:18:23 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 12:18:25 -0700
+
+
+Started GET "/assets/application-a18b20facdc677aacd83d78ef6bf599e.css?body=1" for 127.0.0.1 at 2015-03-31 12:18:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-31 12:18:25 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-31 12:18:25 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-31 12:18:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-31 12:18:34 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-31 12:18:35 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-31 12:19:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"5", "inches"=>"10", "weight"=>"120"}, "commit"=>"Submit"}
+  [1m[35m (0.7ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.1ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.4ms)
+  Rendered guess/make_guess.js.erb (10.6ms)
+Completed 200 OK in 106ms (Views: 23.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=70&remote=true&weight=120" for 127.0.0.1 at 2015-03-31 12:19:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"Y3nT9OvUYvBdPuPWdax2TUu1HRJMN3zI5Eo5q+eRUJZ60SQCXxVZbJVkF+FPTQnKQrloupf4LtqUh0xH0FM+sg==", "guessed_gender"=>"Female", "height"=>"70", "remote"=>"true", "weight"=>"120"}
+Unpermitted parameters: authenticity_token, guessed_gender, remote
+Redirected to http://localhost:9393/guess/results
+Completed 302 Found in 34ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-31 12:19:35 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 366ms (Views: 260.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 12:19:50 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-31 12:19:51 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-31 12:19:51 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-31 12:19:51 -0700
+
+
+Started GET "/assets/application-a18b20facdc677aacd83d78ef6bf599e.css?body=1" for 127.0.0.1 at 2015-03-31 12:19:51 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-31 12:19:51 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-31 12:19:57 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-31 12:19:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 12:20:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (386.1ms)
+  Rendered guess/index.html.erb within layouts/application (397.6ms)
+Completed 200 OK in 656ms (Views: 634.8ms | ActiveRecord: 0.0ms)
+  [1m[36mPerson Load (3.5ms)[0m  [1mSELECT "people".* FROM "people"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-31 12:37:30 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"5", "inches"=>"5", "weight"=>"115"}, "commit"=>"Submit"}
+  [1m[35m (0.6ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.2ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.5ms)
+  Rendered guess/make_guess.js.erb (13.0ms)
+Completed 200 OK in 55ms (Views: 25.9ms | ActiveRecord: 1.1ms)
+  [1m[35m (3.9ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 173], ["gender", 1], ["created_at", "2015-03-31 19:49:12.950765"], ["updated_at", "2015-03-31 19:49:12.950765"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 153], ["gender", 1], ["created_at", "2015-03-31 19:49:12.964342"], ["updated_at", "2015-03-31 19:49:12.964342"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 212], ["gender", 1], ["created_at", "2015-03-31 19:49:12.968191"], ["updated_at", "2015-03-31 19:49:12.968191"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 151], ["gender", 1], ["created_at", "2015-03-31 19:49:12.971248"], ["updated_at", "2015-03-31 19:49:12.971248"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 75], ["weight", 218], ["gender", 1], ["created_at", "2015-03-31 19:49:12.977999"], ["updated_at", "2015-03-31 19:49:12.977999"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 73], ["weight", 193], ["gender", 1], ["created_at", "2015-03-31 19:49:12.980891"], ["updated_at", "2015-03-31 19:49:12.980891"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 189], ["gender", 1], ["created_at", "2015-03-31 19:49:12.983935"], ["updated_at", "2015-03-31 19:49:12.983935"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 190], ["gender", 1], ["created_at", "2015-03-31 19:49:12.986857"], ["updated_at", "2015-03-31 19:49:12.986857"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 196], ["gender", 1], ["created_at", "2015-03-31 19:49:12.990783"], ["updated_at", "2015-03-31 19:49:12.990783"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 196], ["gender", 1], ["created_at", "2015-03-31 19:49:12.993542"], ["updated_at", "2015-03-31 19:49:12.993542"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 203], ["gender", 1], ["created_at", "2015-03-31 19:49:12.996164"], ["updated_at", "2015-03-31 19:49:12.996164"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 209], ["gender", 1], ["created_at", "2015-03-31 19:49:13.000042"], ["updated_at", "2015-03-31 19:49:13.000042"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 163], ["gender", 1], ["created_at", "2015-03-31 19:49:13.002811"], ["updated_at", "2015-03-31 19:49:13.002811"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 174], ["gender", 1], ["created_at", "2015-03-31 19:49:13.005473"], ["updated_at", "2015-03-31 19:49:13.005473"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 159], ["gender", 1], ["created_at", "2015-03-31 19:49:13.008212"], ["updated_at", "2015-03-31 19:49:13.008212"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 154], ["gender", 1], ["created_at", "2015-03-31 19:49:13.011332"], ["updated_at", "2015-03-31 19:49:13.011332"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 201], ["gender", 1], ["created_at", "2015-03-31 19:49:13.014825"], ["updated_at", "2015-03-31 19:49:13.014825"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 174], ["gender", 1], ["created_at", "2015-03-31 19:49:13.017572"], ["updated_at", "2015-03-31 19:49:13.017572"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 154], ["gender", 1], ["created_at", "2015-03-31 19:49:13.020179"], ["updated_at", "2015-03-31 19:49:13.020179"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 170], ["gender", 1], ["created_at", "2015-03-31 19:49:13.024987"], ["updated_at", "2015-03-31 19:49:13.024987"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 215], ["gender", 1], ["created_at", "2015-03-31 19:49:13.027874"], ["updated_at", "2015-03-31 19:49:13.027874"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 71], ["weight", 165], ["gender", 1], ["created_at", "2015-03-31 19:49:13.030657"], ["updated_at", "2015-03-31 19:49:13.030657"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 75], ["weight", 220], ["gender", 1], ["created_at", "2015-03-31 19:49:13.033505"], ["updated_at", "2015-03-31 19:49:13.033505"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 172], ["gender", 1], ["created_at", "2015-03-31 19:49:13.036113"], ["updated_at", "2015-03-31 19:49:13.036113"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 206], ["gender", 1], ["created_at", "2015-03-31 19:49:13.039088"], ["updated_at", "2015-03-31 19:49:13.039088"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 211], ["gender", 1], ["created_at", "2015-03-31 19:49:13.041972"], ["updated_at", "2015-03-31 19:49:13.041972"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 217], ["gender", 1], ["created_at", "2015-03-31 19:49:13.044966"], ["updated_at", "2015-03-31 19:49:13.044966"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 190], ["gender", 1], ["created_at", "2015-03-31 19:49:13.048522"], ["updated_at", "2015-03-31 19:49:13.048522"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 181], ["gender", 1], ["created_at", "2015-03-31 19:49:13.051450"], ["updated_at", "2015-03-31 19:49:13.051450"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 183], ["gender", 1], ["created_at", "2015-03-31 19:49:13.054117"], ["updated_at", "2015-03-31 19:49:13.054117"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 179], ["gender", 1], ["created_at", "2015-03-31 19:49:13.056805"], ["updated_at", "2015-03-31 19:49:13.056805"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 76], ["weight", 170], ["gender", 1], ["created_at", "2015-03-31 19:49:13.059670"], ["updated_at", "2015-03-31 19:49:13.059670"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 214], ["gender", 1], ["created_at", "2015-03-31 19:49:13.062298"], ["updated_at", "2015-03-31 19:49:13.062298"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 156], ["gender", 1], ["created_at", "2015-03-31 19:49:13.065007"], ["updated_at", "2015-03-31 19:49:13.065007"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 159], ["gender", 1], ["created_at", "2015-03-31 19:49:13.067918"], ["updated_at", "2015-03-31 19:49:13.067918"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 74], ["weight", 179], ["gender", 1], ["created_at", "2015-03-31 19:49:13.073408"], ["updated_at", "2015-03-31 19:49:13.073408"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 78], ["weight", 175], ["gender", 1], ["created_at", "2015-03-31 19:49:13.077370"], ["updated_at", "2015-03-31 19:49:13.077370"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 205], ["gender", 1], ["created_at", "2015-03-31 19:49:13.080625"], ["updated_at", "2015-03-31 19:49:13.080625"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 159], ["gender", 1], ["created_at", "2015-03-31 19:49:13.083759"], ["updated_at", "2015-03-31 19:49:13.083759"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 179], ["gender", 1], ["created_at", "2015-03-31 19:49:13.086452"], ["updated_at", "2015-03-31 19:49:13.086452"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 198], ["gender", 1], ["created_at", "2015-03-31 19:49:13.089092"], ["updated_at", "2015-03-31 19:49:13.089092"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 78], ["weight", 180], ["gender", 1], ["created_at", "2015-03-31 19:49:13.091628"], ["updated_at", "2015-03-31 19:49:13.091628"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 200], ["gender", 1], ["created_at", "2015-03-31 19:49:13.094642"], ["updated_at", "2015-03-31 19:49:13.094642"]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 208], ["gender", 1], ["created_at", "2015-03-31 19:49:13.101500"], ["updated_at", "2015-03-31 19:49:13.101500"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 192], ["gender", 1], ["created_at", "2015-03-31 19:49:13.104282"], ["updated_at", "2015-03-31 19:49:13.104282"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 211], ["gender", 1], ["created_at", "2015-03-31 19:49:13.107209"], ["updated_at", "2015-03-31 19:49:13.107209"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 188], ["gender", 1], ["created_at", "2015-03-31 19:49:13.109993"], ["updated_at", "2015-03-31 19:49:13.109993"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 71], ["weight", 155], ["gender", 1], ["created_at", "2015-03-31 19:49:13.116053"], ["updated_at", "2015-03-31 19:49:13.116053"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 207], ["gender", 1], ["created_at", "2015-03-31 19:49:13.118860"], ["updated_at", "2015-03-31 19:49:13.118860"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 210], ["gender", 1], ["created_at", "2015-03-31 19:49:13.121445"], ["updated_at", "2015-03-31 19:49:13.121445"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 116], ["gender", -1], ["created_at", "2015-03-31 19:49:13.124172"], ["updated_at", "2015-03-31 19:49:13.124172"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 138], ["gender", -1], ["created_at", "2015-03-31 19:49:13.126722"], ["updated_at", "2015-03-31 19:49:13.126722"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 110], ["gender", -1], ["created_at", "2015-03-31 19:49:13.129554"], ["updated_at", "2015-03-31 19:49:13.129554"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 145], ["gender", -1], ["created_at", "2015-03-31 19:49:13.132316"], ["updated_at", "2015-03-31 19:49:13.132316"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 163], ["gender", -1], ["created_at", "2015-03-31 19:49:13.137667"], ["updated_at", "2015-03-31 19:49:13.137667"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 168], ["gender", -1], ["created_at", "2015-03-31 19:49:13.140537"], ["updated_at", "2015-03-31 19:49:13.140537"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 62], ["weight", 111], ["gender", -1], ["created_at", "2015-03-31 19:49:13.143218"], ["updated_at", "2015-03-31 19:49:13.143218"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 163], ["gender", -1], ["created_at", "2015-03-31 19:49:13.148805"], ["updated_at", "2015-03-31 19:49:13.148805"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 140], ["gender", -1], ["created_at", "2015-03-31 19:49:13.151611"], ["updated_at", "2015-03-31 19:49:13.151611"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 163], ["gender", -1], ["created_at", "2015-03-31 19:49:13.154115"], ["updated_at", "2015-03-31 19:49:13.154115"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 112], ["gender", -1], ["created_at", "2015-03-31 19:49:13.156526"], ["updated_at", "2015-03-31 19:49:13.156526"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 67], ["weight", 156], ["gender", -1], ["created_at", "2015-03-31 19:49:13.159223"], ["updated_at", "2015-03-31 19:49:13.159223"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 164], ["gender", -1], ["created_at", "2015-03-31 19:49:13.162642"], ["updated_at", "2015-03-31 19:49:13.162642"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 121], ["gender", -1], ["created_at", "2015-03-31 19:49:13.165625"], ["updated_at", "2015-03-31 19:49:13.165625"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 169], ["gender", -1], ["created_at", "2015-03-31 19:49:13.168188"], ["updated_at", "2015-03-31 19:49:13.168188"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 128], ["gender", -1], ["created_at", "2015-03-31 19:49:13.172184"], ["updated_at", "2015-03-31 19:49:13.172184"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 142], ["gender", -1], ["created_at", "2015-03-31 19:49:13.174870"], ["updated_at", "2015-03-31 19:49:13.174870"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 134], ["gender", -1], ["created_at", "2015-03-31 19:49:13.177451"], ["updated_at", "2015-03-31 19:49:13.177451"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 153], ["gender", -1], ["created_at", "2015-03-31 19:49:13.180008"], ["updated_at", "2015-03-31 19:49:13.180008"]]
+  [1m[35m (6.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 149], ["gender", -1], ["created_at", "2015-03-31 19:49:13.189186"], ["updated_at", "2015-03-31 19:49:13.189186"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 167], ["gender", -1], ["created_at", "2015-03-31 19:49:13.192795"], ["updated_at", "2015-03-31 19:49:13.192795"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 67], ["weight", 112], ["gender", -1], ["created_at", "2015-03-31 19:49:13.196721"], ["updated_at", "2015-03-31 19:49:13.196721"]]
+  [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 115], ["gender", -1], ["created_at", "2015-03-31 19:49:13.205635"], ["updated_at", "2015-03-31 19:49:13.205635"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 67], ["weight", 152], ["gender", -1], ["created_at", "2015-03-31 19:49:13.208599"], ["updated_at", "2015-03-31 19:49:13.208599"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 121], ["gender", -1], ["created_at", "2015-03-31 19:49:13.211539"], ["updated_at", "2015-03-31 19:49:13.211539"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 150], ["gender", -1], ["created_at", "2015-03-31 19:49:13.214273"], ["updated_at", "2015-03-31 19:49:13.214273"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 114], ["gender", -1], ["created_at", "2015-03-31 19:49:13.217509"], ["updated_at", "2015-03-31 19:49:13.217509"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 123], ["gender", -1], ["created_at", "2015-03-31 19:49:13.220273"], ["updated_at", "2015-03-31 19:49:13.220273"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 125], ["gender", -1], ["created_at", "2015-03-31 19:49:13.223230"], ["updated_at", "2015-03-31 19:49:13.223230"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 126], ["gender", -1], ["created_at", "2015-03-31 19:49:13.225848"], ["updated_at", "2015-03-31 19:49:13.225848"]]
+  [1m[36m (6.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 63], ["weight", 110], ["gender", -1], ["created_at", "2015-03-31 19:49:13.235244"], ["updated_at", "2015-03-31 19:49:13.235244"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 135], ["gender", -1], ["created_at", "2015-03-31 19:49:13.238728"], ["updated_at", "2015-03-31 19:49:13.238728"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 148], ["gender", -1], ["created_at", "2015-03-31 19:49:13.241710"], ["updated_at", "2015-03-31 19:49:13.241710"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 159], ["gender", -1], ["created_at", "2015-03-31 19:49:13.244621"], ["updated_at", "2015-03-31 19:49:13.244621"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 62], ["weight", 139], ["gender", -1], ["created_at", "2015-03-31 19:49:13.247302"], ["updated_at", "2015-03-31 19:49:13.247302"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 164], ["gender", -1], ["created_at", "2015-03-31 19:49:13.249970"], ["updated_at", "2015-03-31 19:49:13.249970"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 167], ["gender", -1], ["created_at", "2015-03-31 19:49:13.252663"], ["updated_at", "2015-03-31 19:49:13.252663"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 151], ["gender", -1], ["created_at", "2015-03-31 19:49:13.256038"], ["updated_at", "2015-03-31 19:49:13.256038"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 111], ["gender", -1], ["created_at", "2015-03-31 19:49:13.258786"], ["updated_at", "2015-03-31 19:49:13.258786"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 166], ["gender", -1], ["created_at", "2015-03-31 19:49:13.261552"], ["updated_at", "2015-03-31 19:49:13.261552"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 62], ["weight", 125], ["gender", -1], ["created_at", "2015-03-31 19:49:13.264310"], ["updated_at", "2015-03-31 19:49:13.264310"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 114], ["gender", -1], ["created_at", "2015-03-31 19:49:13.267102"], ["updated_at", "2015-03-31 19:49:13.267102"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 62], ["weight", 129], ["gender", -1], ["created_at", "2015-03-31 19:49:13.269765"], ["updated_at", "2015-03-31 19:49:13.269765"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 122], ["gender", -1], ["created_at", "2015-03-31 19:49:13.272775"], ["updated_at", "2015-03-31 19:49:13.272775"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 158], ["gender", -1], ["created_at", "2015-03-31 19:49:13.275675"], ["updated_at", "2015-03-31 19:49:13.275675"]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 62], ["weight", 147], ["gender", -1], ["created_at", "2015-03-31 19:49:13.290293"], ["updated_at", "2015-03-31 19:49:13.290293"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 62], ["weight", 157], ["gender", -1], ["created_at", "2015-03-31 19:49:13.293688"], ["updated_at", "2015-03-31 19:49:13.293688"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 117], ["gender", -1], ["created_at", "2015-03-31 19:49:13.298726"], ["updated_at", "2015-03-31 19:49:13.298726"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 123], ["gender", -1], ["created_at", "2015-03-31 19:49:13.303417"], ["updated_at", "2015-03-31 19:49:13.303417"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 140], ["gender", -1], ["created_at", "2015-03-31 19:49:13.306148"], ["updated_at", "2015-03-31 19:49:13.306148"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mPerson Load (3.1ms)[0m  [1mSELECT "people".* FROM "people"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 12:49:35 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (347.2ms)
+  Rendered guess/index.html.erb within layouts/application (355.4ms)
+Completed 200 OK in 670ms (Views: 651.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 12:49:51 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-31 12:49:52 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-31 12:49:52 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-31 12:49:52 -0700
+
+
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-31 12:49:52 -0700
+Started GET "/assets/application-a18b20facdc677aacd83d78ef6bf599e.css?body=1" for 127.0.0.1 at 2015-03-31 12:49:52 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-31 12:49:59 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-31 12:49:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 12:50:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (330.7ms)
+  Rendered guess/index.html.erb within layouts/application (342.2ms)
+Completed 200 OK in 659ms (Views: 640.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 12:50:23 -0700
+
+
+Started GET "/assets/application-a18b20facdc677aacd83d78ef6bf599e.css?body=1" for 127.0.0.1 at 2015-03-31 12:50:23 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-31 12:50:23 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-31 12:50:23 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-31 12:50:23 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-31 12:50:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-31 12:50:29 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-31 12:50:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (12.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-31 12:50:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"5", "inches"=>"5", "weight"=>"120"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.5ms)
+  Rendered guess/make_guess.js.erb (12.2ms)
+Completed 200 OK in 56ms (Views: 26.1ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=65&remote=true&weight=120" for 127.0.0.1 at 2015-03-31 12:51:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"8m9lS9BMmTyYKT/7C7+UU5B/9M/ThCKWTcRPVtWUuS7rx5K9ZI2ioFBzy8wxXuvUmXOBZwhLcIQ9CTq64lbXCg==", "guessed_gender"=>"Female", "height"=>"65", "remote"=>"true", "weight"=>"120"}
+Redirected to http://localhost:9393/guess/results
+Completed 302 Found in 33ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-31 12:51:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.7ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.7ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 413ms (Views: 357.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-31 12:51:40 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-31 12:51:40 -0700
+
+
+
+
+Started GET "/assets/application-a18b20facdc677aacd83d78ef6bf599e.css?body=1" for 127.0.0.1 at 2015-03-31 12:51:41 -0700
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-31 12:51:41 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 12:51:41 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-31 12:51:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-31 12:51:49 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-31 12:51:49 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 12:55:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (398.5ms)
+  Rendered guess/index.html.erb within layouts/application (408.9ms)
+Completed 200 OK in 857ms (Views: 833.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 12:55:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 12:55:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (423.5ms)
+  Rendered guess/index.html.erb within layouts/application (433.1ms)
+  Rendered guess/_guess_form.html.erb (428.6ms)
+  Rendered guess/index.html.erb within layouts/application (438.2ms)
+Completed 200 OK in 787ms (Views: 768.4ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 789ms (Views: 770.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-31 12:55:38 -0700
+
+
+Started GET "/assets/application-52acc34801aee64c5a461cdea90f7184.css?body=1" for 127.0.0.1 at 2015-03-31 12:55:39 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 12:55:39 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-31 12:55:39 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-31 12:55:39 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-31 12:55:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-31 12:55:47 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-31 12:55:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-31 12:56:04 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"2", "weight"=>"200"}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.5ms)
+  Rendered guess/make_guess.js.erb (12.1ms)
+Completed 200 OK in 54ms (Views: 23.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/correct?guessed_gender=Male&height=74&remote=true&weight=200" for 127.0.0.1 at 2015-03-31 12:56:10 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"/CQr8fiW//hOHJdoYJoGHbihU2fsVVhy1zBuEJflNMrljNwHTFfEZIZGY19ae3masa0mzzeaCmCn/Rv8oCda7g==", "guessed_gender"=>"Male", "height"=>"74", "remote"=>"true", "weight"=>"200"}
+Redirected to http://localhost:9393/guess/results
+Completed 302 Found in 34ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-31 12:56:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.7ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered guess/results.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 343ms (Views: 296.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-31 12:56:30 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-31 12:56:31 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-31 12:56:31 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-31 12:56:32 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-31 12:56:32 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 12:56:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-31 12:56:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mPerson Load (4.6ms)[0m  SELECT "people".* FROM "people"
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (2.8ms)[0m  select sqlite_version(*)
+  [1m[36m (8.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePeople (20150327180009)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "height" integer, "weight" integer, "gender" integer, "guess_correct" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150327180009"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 179], ["gender", 1], ["created_at", "2015-03-31 19:58:38.665402"], ["updated_at", "2015-03-31 19:58:38.665402"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 183], ["gender", 1], ["created_at", "2015-03-31 19:58:38.668943"], ["updated_at", "2015-03-31 19:58:38.668943"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 71], ["weight", 183], ["gender", 1], ["created_at", "2015-03-31 19:58:38.671681"], ["updated_at", "2015-03-31 19:58:38.671681"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 165], ["gender", 1], ["created_at", "2015-03-31 19:58:38.674346"], ["updated_at", "2015-03-31 19:58:38.674346"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 178], ["gender", 1], ["created_at", "2015-03-31 19:58:38.677034"], ["updated_at", "2015-03-31 19:58:38.677034"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 192], ["gender", 1], ["created_at", "2015-03-31 19:58:38.680111"], ["updated_at", "2015-03-31 19:58:38.680111"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 173], ["gender", 1], ["created_at", "2015-03-31 19:58:38.682862"], ["updated_at", "2015-03-31 19:58:38.682862"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 204], ["gender", 1], ["created_at", "2015-03-31 19:58:38.685531"], ["updated_at", "2015-03-31 19:58:38.685531"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 216], ["gender", 1], ["created_at", "2015-03-31 19:58:38.688142"], ["updated_at", "2015-03-31 19:58:38.688142"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 212], ["gender", 1], ["created_at", "2015-03-31 19:58:38.692064"], ["updated_at", "2015-03-31 19:58:38.692064"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 206], ["gender", 1], ["created_at", "2015-03-31 19:58:38.695097"], ["updated_at", "2015-03-31 19:58:38.695097"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 78], ["weight", 194], ["gender", 1], ["created_at", "2015-03-31 19:58:38.698046"], ["updated_at", "2015-03-31 19:58:38.698046"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 195], ["gender", 1], ["created_at", "2015-03-31 19:58:38.701066"], ["updated_at", "2015-03-31 19:58:38.701066"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 153], ["gender", 1], ["created_at", "2015-03-31 19:58:38.703747"], ["updated_at", "2015-03-31 19:58:38.703747"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 185], ["gender", 1], ["created_at", "2015-03-31 19:58:38.706461"], ["updated_at", "2015-03-31 19:58:38.706461"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 178], ["gender", 1], ["created_at", "2015-03-31 19:58:38.709035"], ["updated_at", "2015-03-31 19:58:38.709035"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 74], ["weight", 186], ["gender", 1], ["created_at", "2015-03-31 19:58:38.711855"], ["updated_at", "2015-03-31 19:58:38.711855"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 154], ["gender", 1], ["created_at", "2015-03-31 19:58:38.714735"], ["updated_at", "2015-03-31 19:58:38.714735"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 164], ["gender", 1], ["created_at", "2015-03-31 19:58:38.717365"], ["updated_at", "2015-03-31 19:58:38.717365"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 179], ["gender", 1], ["created_at", "2015-03-31 19:58:38.719936"], ["updated_at", "2015-03-31 19:58:38.719936"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 73], ["weight", 169], ["gender", 1], ["created_at", "2015-03-31 19:58:38.723258"], ["updated_at", "2015-03-31 19:58:38.723258"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 191], ["gender", 1], ["created_at", "2015-03-31 19:58:38.726695"], ["updated_at", "2015-03-31 19:58:38.726695"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 205], ["gender", 1], ["created_at", "2015-03-31 19:58:38.729624"], ["updated_at", "2015-03-31 19:58:38.729624"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 195], ["gender", 1], ["created_at", "2015-03-31 19:58:38.732365"], ["updated_at", "2015-03-31 19:58:38.732365"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 75], ["weight", 164], ["gender", 1], ["created_at", "2015-03-31 19:58:38.735239"], ["updated_at", "2015-03-31 19:58:38.735239"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 219], ["gender", 1], ["created_at", "2015-03-31 19:58:38.737913"], ["updated_at", "2015-03-31 19:58:38.737913"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 78], ["weight", 192], ["gender", 1], ["created_at", "2015-03-31 19:58:38.740719"], ["updated_at", "2015-03-31 19:58:38.740719"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 202], ["gender", 1], ["created_at", "2015-03-31 19:58:38.743383"], ["updated_at", "2015-03-31 19:58:38.743383"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 78], ["weight", 219], ["gender", 1], ["created_at", "2015-03-31 19:58:38.746215"], ["updated_at", "2015-03-31 19:58:38.746215"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 220], ["gender", 1], ["created_at", "2015-03-31 19:58:38.748829"], ["updated_at", "2015-03-31 19:58:38.748829"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 76], ["weight", 150], ["gender", 1], ["created_at", "2015-03-31 19:58:38.751532"], ["updated_at", "2015-03-31 19:58:38.751532"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 200], ["gender", 1], ["created_at", "2015-03-31 19:58:38.754013"], ["updated_at", "2015-03-31 19:58:38.754013"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 76], ["weight", 205], ["gender", 1], ["created_at", "2015-03-31 19:58:38.757066"], ["updated_at", "2015-03-31 19:58:38.757066"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 176], ["gender", 1], ["created_at", "2015-03-31 19:58:38.759852"], ["updated_at", "2015-03-31 19:58:38.759852"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 73], ["weight", 219], ["gender", 1], ["created_at", "2015-03-31 19:58:38.762873"], ["updated_at", "2015-03-31 19:58:38.762873"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 201], ["gender", 1], ["created_at", "2015-03-31 19:58:38.765584"], ["updated_at", "2015-03-31 19:58:38.765584"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 75], ["weight", 164], ["gender", 1], ["created_at", "2015-03-31 19:58:38.768335"], ["updated_at", "2015-03-31 19:58:38.768335"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 78], ["weight", 157], ["gender", 1], ["created_at", "2015-03-31 19:58:38.771585"], ["updated_at", "2015-03-31 19:58:38.771585"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 176], ["gender", 1], ["created_at", "2015-03-31 19:58:38.774442"], ["updated_at", "2015-03-31 19:58:38.774442"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 78], ["weight", 177], ["gender", 1], ["created_at", "2015-03-31 19:58:38.777061"], ["updated_at", "2015-03-31 19:58:38.777061"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 203], ["gender", 1], ["created_at", "2015-03-31 19:58:38.782032"], ["updated_at", "2015-03-31 19:58:38.782032"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 210], ["gender", 1], ["created_at", "2015-03-31 19:58:38.784790"], ["updated_at", "2015-03-31 19:58:38.784790"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 76], ["weight", 189], ["gender", 1], ["created_at", "2015-03-31 19:58:38.787373"], ["updated_at", "2015-03-31 19:58:38.787373"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 198], ["gender", 1], ["created_at", "2015-03-31 19:58:38.791164"], ["updated_at", "2015-03-31 19:58:38.791164"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 211], ["gender", 1], ["created_at", "2015-03-31 19:58:38.794180"], ["updated_at", "2015-03-31 19:58:38.794180"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 169], ["gender", 1], ["created_at", "2015-03-31 19:58:38.797348"], ["updated_at", "2015-03-31 19:58:38.797348"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 76], ["weight", 201], ["gender", 1], ["created_at", "2015-03-31 19:58:38.800639"], ["updated_at", "2015-03-31 19:58:38.800639"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 170], ["gender", 1], ["created_at", "2015-03-31 19:58:38.803364"], ["updated_at", "2015-03-31 19:58:38.803364"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 75], ["weight", 214], ["gender", 1], ["created_at", "2015-03-31 19:58:38.805933"], ["updated_at", "2015-03-31 19:58:38.805933"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 173], ["gender", 1], ["created_at", "2015-03-31 19:58:38.808946"], ["updated_at", "2015-03-31 19:58:38.808946"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 153], ["gender", -1], ["created_at", "2015-03-31 19:58:38.811989"], ["updated_at", "2015-03-31 19:58:38.811989"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 115], ["gender", -1], ["created_at", "2015-03-31 19:58:38.814596"], ["updated_at", "2015-03-31 19:58:38.814596"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 114], ["gender", -1], ["created_at", "2015-03-31 19:58:38.817321"], ["updated_at", "2015-03-31 19:58:38.817321"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 63], ["weight", 129], ["gender", -1], ["created_at", "2015-03-31 19:58:38.820047"], ["updated_at", "2015-03-31 19:58:38.820047"]]
+  [1m[35m (6.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 116], ["gender", -1], ["created_at", "2015-03-31 19:58:38.829597"], ["updated_at", "2015-03-31 19:58:38.829597"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 157], ["gender", -1], ["created_at", "2015-03-31 19:58:38.833225"], ["updated_at", "2015-03-31 19:58:38.833225"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 164], ["gender", -1], ["created_at", "2015-03-31 19:58:38.835930"], ["updated_at", "2015-03-31 19:58:38.835930"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 117], ["gender", -1], ["created_at", "2015-03-31 19:58:38.838960"], ["updated_at", "2015-03-31 19:58:38.838960"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 130], ["gender", -1], ["created_at", "2015-03-31 19:58:38.841730"], ["updated_at", "2015-03-31 19:58:38.841730"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 154], ["gender", -1], ["created_at", "2015-03-31 19:58:38.844371"], ["updated_at", "2015-03-31 19:58:38.844371"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 145], ["gender", -1], ["created_at", "2015-03-31 19:58:38.846911"], ["updated_at", "2015-03-31 19:58:38.846911"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 131], ["gender", -1], ["created_at", "2015-03-31 19:58:38.850398"], ["updated_at", "2015-03-31 19:58:38.850398"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 129], ["gender", -1], ["created_at", "2015-03-31 19:58:38.853228"], ["updated_at", "2015-03-31 19:58:38.853228"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 63], ["weight", 163], ["gender", -1], ["created_at", "2015-03-31 19:58:38.855742"], ["updated_at", "2015-03-31 19:58:38.855742"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 122], ["gender", -1], ["created_at", "2015-03-31 19:58:38.858352"], ["updated_at", "2015-03-31 19:58:38.858352"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 151], ["gender", -1], ["created_at", "2015-03-31 19:58:38.865454"], ["updated_at", "2015-03-31 19:58:38.865454"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 146], ["gender", -1], ["created_at", "2015-03-31 19:58:38.870638"], ["updated_at", "2015-03-31 19:58:38.870638"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 130], ["gender", -1], ["created_at", "2015-03-31 19:58:38.873860"], ["updated_at", "2015-03-31 19:58:38.873860"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 139], ["gender", -1], ["created_at", "2015-03-31 19:58:38.877361"], ["updated_at", "2015-03-31 19:58:38.877361"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 118], ["gender", -1], ["created_at", "2015-03-31 19:58:38.880248"], ["updated_at", "2015-03-31 19:58:38.880248"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 146], ["gender", -1], ["created_at", "2015-03-31 19:58:38.882930"], ["updated_at", "2015-03-31 19:58:38.882930"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 145], ["gender", -1], ["created_at", "2015-03-31 19:58:38.885725"], ["updated_at", "2015-03-31 19:58:38.885725"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 162], ["gender", -1], ["created_at", "2015-03-31 19:58:38.888455"], ["updated_at", "2015-03-31 19:58:38.888455"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 138], ["gender", -1], ["created_at", "2015-03-31 19:58:38.891132"], ["updated_at", "2015-03-31 19:58:38.891132"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 148], ["gender", -1], ["created_at", "2015-03-31 19:58:38.895288"], ["updated_at", "2015-03-31 19:58:38.895288"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 152], ["gender", -1], ["created_at", "2015-03-31 19:58:38.901184"], ["updated_at", "2015-03-31 19:58:38.901184"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 62], ["weight", 157], ["gender", -1], ["created_at", "2015-03-31 19:58:38.906229"], ["updated_at", "2015-03-31 19:58:38.906229"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 122], ["gender", -1], ["created_at", "2015-03-31 19:58:38.911418"], ["updated_at", "2015-03-31 19:58:38.911418"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 128], ["gender", -1], ["created_at", "2015-03-31 19:58:38.914717"], ["updated_at", "2015-03-31 19:58:38.914717"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 159], ["gender", -1], ["created_at", "2015-03-31 19:58:38.917332"], ["updated_at", "2015-03-31 19:58:38.917332"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 125], ["gender", -1], ["created_at", "2015-03-31 19:58:38.920169"], ["updated_at", "2015-03-31 19:58:38.920169"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 151], ["gender", -1], ["created_at", "2015-03-31 19:58:38.922852"], ["updated_at", "2015-03-31 19:58:38.922852"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 131], ["gender", -1], ["created_at", "2015-03-31 19:58:38.926134"], ["updated_at", "2015-03-31 19:58:38.926134"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 117], ["gender", -1], ["created_at", "2015-03-31 19:58:38.928846"], ["updated_at", "2015-03-31 19:58:38.928846"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 151], ["gender", -1], ["created_at", "2015-03-31 19:58:38.932065"], ["updated_at", "2015-03-31 19:58:38.932065"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 162], ["gender", -1], ["created_at", "2015-03-31 19:58:38.934766"], ["updated_at", "2015-03-31 19:58:38.934766"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 153], ["gender", -1], ["created_at", "2015-03-31 19:58:38.937383"], ["updated_at", "2015-03-31 19:58:38.937383"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 162], ["gender", -1], ["created_at", "2015-03-31 19:58:38.940462"], ["updated_at", "2015-03-31 19:58:38.940462"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 162], ["gender", -1], ["created_at", "2015-03-31 19:58:38.943159"], ["updated_at", "2015-03-31 19:58:38.943159"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 112], ["gender", -1], ["created_at", "2015-03-31 19:58:38.946095"], ["updated_at", "2015-03-31 19:58:38.946095"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 138], ["gender", -1], ["created_at", "2015-03-31 19:58:38.949040"], ["updated_at", "2015-03-31 19:58:38.949040"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 169], ["gender", -1], ["created_at", "2015-03-31 19:58:38.951719"], ["updated_at", "2015-03-31 19:58:38.951719"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 160], ["gender", -1], ["created_at", "2015-03-31 19:58:38.954349"], ["updated_at", "2015-03-31 19:58:38.954349"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 122], ["gender", -1], ["created_at", "2015-03-31 19:58:38.957107"], ["updated_at", "2015-03-31 19:58:38.957107"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 113], ["gender", -1], ["created_at", "2015-03-31 19:58:38.960100"], ["updated_at", "2015-03-31 19:58:38.960100"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 114], ["gender", -1], ["created_at", "2015-03-31 19:58:38.962806"], ["updated_at", "2015-03-31 19:58:38.962806"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 152], ["gender", -1], ["created_at", "2015-03-31 19:58:38.965363"], ["updated_at", "2015-03-31 19:58:38.965363"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 151], ["gender", -1], ["created_at", "2015-03-31 19:58:38.967839"], ["updated_at", "2015-03-31 19:58:38.967839"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 140], ["gender", -1], ["created_at", "2015-03-31 19:58:38.970829"], ["updated_at", "2015-03-31 19:58:38.970829"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 144], ["gender", -1], ["created_at", "2015-03-31 19:58:38.973514"], ["updated_at", "2015-03-31 19:58:38.973514"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mPerson Load (2.5ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.9ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" IS NULL[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 13:00:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (656.1ms)
+  Rendered guess/index.html.erb within layouts/application (729.5ms)
+Completed 200 OK in 1052ms (Views: 1035.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 13:00:43 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-31 13:00:46 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-31 13:00:47 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-31 13:00:47 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-31 13:00:47 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-31 13:00:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-31 13:00:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 13:01:53 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (338.3ms)
+  Rendered guess/index.html.erb within layouts/application (348.6ms)
+Completed 200 OK in 753ms (Views: 731.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-9d7dba9e680dd8208ea4e1148db08f46.css?body=1" for 127.0.0.1 at 2015-03-31 13:02:10 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 13:02:12 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for 127.0.0.1 at 2015-03-31 13:02:12 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-31 13:02:12 -0700
+
+
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-31 13:02:12 -0700
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for 127.0.0.1 at 2015-03-31 13:02:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-31 13:02:20 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-31 13:02:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started POST "/guess/make_guess" for 127.0.0.1 at 2015-03-31 13:02:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"2", "weight"=>"159"}, "commit"=>"Submit"}
+  [1m[35m (1.0ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.7ms)
+  Rendered guess/make_guess.js.erb (12.5ms)
+Completed 200 OK in 53ms (Views: 26.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/guess/correct?guessed_gender=Male&height=74&remote=true&weight=159" for 127.0.0.1 at 2015-03-31 13:03:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"xNpgyAMpUgueW2JcH6VgKJc9GY2tW6m5bFgWKz6e2xLdcpc+t+hpl1YBlmslRB+vnjFsJXaU+6sclWPHCVy1Ng==", "guessed_gender"=>"Male", "height"=>"74", "remote"=>"true", "weight"=>"159"}
+Redirected to http://localhost:9393/guess/results
+Completed 302 Found in 45ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/guess/results" for 127.0.0.1 at 2015-03-31 13:03:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.9ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.3ms)
+
+ZeroDivisionError (divided by 0):
+  app/controllers/guess_controller.rb:53:in `/'
+  app/controllers/guess_controller.rb:53:in `results'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (39.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (85.7ms)
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (2.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePeople (20150327180009)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "height" integer, "weight" integer, "gender" integer, "guess_correct" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150327180009"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 75], ["weight", 209], ["gender", 1], ["created_at", "2015-03-31 20:06:38.437138"], ["updated_at", "2015-03-31 20:06:38.437138"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 216], ["gender", 1], ["created_at", "2015-03-31 20:06:38.441974"], ["updated_at", "2015-03-31 20:06:38.441974"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 150], ["gender", 1], ["created_at", "2015-03-31 20:06:38.445126"], ["updated_at", "2015-03-31 20:06:38.445126"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 153], ["gender", 1], ["created_at", "2015-03-31 20:06:38.447829"], ["updated_at", "2015-03-31 20:06:38.447829"]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 75], ["weight", 153], ["gender", 1], ["created_at", "2015-03-31 20:06:38.453660"], ["updated_at", "2015-03-31 20:06:38.453660"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 150], ["gender", 1], ["created_at", "2015-03-31 20:06:38.456612"], ["updated_at", "2015-03-31 20:06:38.456612"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 165], ["gender", 1], ["created_at", "2015-03-31 20:06:38.459277"], ["updated_at", "2015-03-31 20:06:38.459277"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 197], ["gender", 1], ["created_at", "2015-03-31 20:06:38.462927"], ["updated_at", "2015-03-31 20:06:38.462927"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 219], ["gender", 1], ["created_at", "2015-03-31 20:06:38.466788"], ["updated_at", "2015-03-31 20:06:38.466788"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 210], ["gender", 1], ["created_at", "2015-03-31 20:06:38.469416"], ["updated_at", "2015-03-31 20:06:38.469416"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 76], ["weight", 201], ["gender", 1], ["created_at", "2015-03-31 20:06:38.472371"], ["updated_at", "2015-03-31 20:06:38.472371"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 205], ["gender", 1], ["created_at", "2015-03-31 20:06:38.475478"], ["updated_at", "2015-03-31 20:06:38.475478"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 220], ["gender", 1], ["created_at", "2015-03-31 20:06:38.478547"], ["updated_at", "2015-03-31 20:06:38.478547"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 167], ["gender", 1], ["created_at", "2015-03-31 20:06:38.481225"], ["updated_at", "2015-03-31 20:06:38.481225"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 74], ["weight", 175], ["gender", 1], ["created_at", "2015-03-31 20:06:38.483774"], ["updated_at", "2015-03-31 20:06:38.483774"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 172], ["gender", 1], ["created_at", "2015-03-31 20:06:38.486417"], ["updated_at", "2015-03-31 20:06:38.486417"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 172], ["gender", 1], ["created_at", "2015-03-31 20:06:38.490286"], ["updated_at", "2015-03-31 20:06:38.490286"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 194], ["gender", 1], ["created_at", "2015-03-31 20:06:38.493001"], ["updated_at", "2015-03-31 20:06:38.493001"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 73], ["weight", 204], ["gender", 1], ["created_at", "2015-03-31 20:06:38.495688"], ["updated_at", "2015-03-31 20:06:38.495688"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 155], ["gender", 1], ["created_at", "2015-03-31 20:06:38.498253"], ["updated_at", "2015-03-31 20:06:38.498253"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 71], ["weight", 199], ["gender", 1], ["created_at", "2015-03-31 20:06:38.501054"], ["updated_at", "2015-03-31 20:06:38.501054"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 195], ["gender", 1], ["created_at", "2015-03-31 20:06:38.503652"], ["updated_at", "2015-03-31 20:06:38.503652"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 192], ["gender", 1], ["created_at", "2015-03-31 20:06:38.506254"], ["updated_at", "2015-03-31 20:06:38.506254"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 152], ["gender", 1], ["created_at", "2015-03-31 20:06:38.508855"], ["updated_at", "2015-03-31 20:06:38.508855"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 76], ["weight", 189], ["gender", 1], ["created_at", "2015-03-31 20:06:38.512285"], ["updated_at", "2015-03-31 20:06:38.512285"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 199], ["gender", 1], ["created_at", "2015-03-31 20:06:38.514960"], ["updated_at", "2015-03-31 20:06:38.514960"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 175], ["gender", 1], ["created_at", "2015-03-31 20:06:38.517572"], ["updated_at", "2015-03-31 20:06:38.517572"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 78], ["weight", 198], ["gender", 1], ["created_at", "2015-03-31 20:06:38.520057"], ["updated_at", "2015-03-31 20:06:38.520057"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 78], ["weight", 175], ["gender", 1], ["created_at", "2015-03-31 20:06:38.522843"], ["updated_at", "2015-03-31 20:06:38.522843"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 155], ["gender", 1], ["created_at", "2015-03-31 20:06:38.525456"], ["updated_at", "2015-03-31 20:06:38.525456"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 78], ["weight", 158], ["gender", 1], ["created_at", "2015-03-31 20:06:38.528117"], ["updated_at", "2015-03-31 20:06:38.528117"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 160], ["gender", 1], ["created_at", "2015-03-31 20:06:38.530652"], ["updated_at", "2015-03-31 20:06:38.530652"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 215], ["gender", 1], ["created_at", "2015-03-31 20:06:38.533722"], ["updated_at", "2015-03-31 20:06:38.533722"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 208], ["gender", 1], ["created_at", "2015-03-31 20:06:38.536530"], ["updated_at", "2015-03-31 20:06:38.536530"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 205], ["gender", 1], ["created_at", "2015-03-31 20:06:38.539205"], ["updated_at", "2015-03-31 20:06:38.539205"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 198], ["gender", 1], ["created_at", "2015-03-31 20:06:38.541700"], ["updated_at", "2015-03-31 20:06:38.541700"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 200], ["gender", 1], ["created_at", "2015-03-31 20:06:38.546477"], ["updated_at", "2015-03-31 20:06:38.546477"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 220], ["gender", 1], ["created_at", "2015-03-31 20:06:38.550449"], ["updated_at", "2015-03-31 20:06:38.550449"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 214], ["gender", 1], ["created_at", "2015-03-31 20:06:38.553681"], ["updated_at", "2015-03-31 20:06:38.553681"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 192], ["gender", 1], ["created_at", "2015-03-31 20:06:38.556326"], ["updated_at", "2015-03-31 20:06:38.556326"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 195], ["gender", 1], ["created_at", "2015-03-31 20:06:38.560494"], ["updated_at", "2015-03-31 20:06:38.560494"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 78], ["weight", 211], ["gender", 1], ["created_at", "2015-03-31 20:06:38.563345"], ["updated_at", "2015-03-31 20:06:38.563345"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 75], ["weight", 195], ["gender", 1], ["created_at", "2015-03-31 20:06:38.566275"], ["updated_at", "2015-03-31 20:06:38.566275"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 176], ["gender", 1], ["created_at", "2015-03-31 20:06:38.569140"], ["updated_at", "2015-03-31 20:06:38.569140"]]
+  [1m[35m (8.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 174], ["gender", 1], ["created_at", "2015-03-31 20:06:38.579793"], ["updated_at", "2015-03-31 20:06:38.579793"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 73], ["weight", 160], ["gender", 1], ["created_at", "2015-03-31 20:06:38.585806"], ["updated_at", "2015-03-31 20:06:38.585806"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 198], ["gender", 1], ["created_at", "2015-03-31 20:06:38.589044"], ["updated_at", "2015-03-31 20:06:38.589044"]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 78], ["weight", 185], ["gender", 1], ["created_at", "2015-03-31 20:06:38.608399"], ["updated_at", "2015-03-31 20:06:38.608399"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 78], ["weight", 187], ["gender", 1], ["created_at", "2015-03-31 20:06:38.612691"], ["updated_at", "2015-03-31 20:06:38.612691"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 208], ["gender", 1], ["created_at", "2015-03-31 20:06:38.615688"], ["updated_at", "2015-03-31 20:06:38.615688"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 74], ["weight", 193], ["gender", 1], ["created_at", "2015-03-31 20:06:38.618337"], ["updated_at", "2015-03-31 20:06:38.618337"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 140], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.620945"], ["updated_at", "2015-03-31 20:06:38.620945"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 66], ["weight", 131], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.623635"], ["updated_at", "2015-03-31 20:06:38.623635"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 134], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.626791"], ["updated_at", "2015-03-31 20:06:38.626791"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 62], ["weight", 154], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.629908"], ["updated_at", "2015-03-31 20:06:38.629908"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 127], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.633243"], ["updated_at", "2015-03-31 20:06:38.633243"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 68], ["weight", 113], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.635955"], ["updated_at", "2015-03-31 20:06:38.635955"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 148], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.638880"], ["updated_at", "2015-03-31 20:06:38.638880"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 65], ["weight", 140], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.641458"], ["updated_at", "2015-03-31 20:06:38.641458"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 157], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.644778"], ["updated_at", "2015-03-31 20:06:38.644778"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 70], ["weight", 124], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.647637"], ["updated_at", "2015-03-31 20:06:38.647637"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 62], ["weight", 121], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.650739"], ["updated_at", "2015-03-31 20:06:38.650739"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 63], ["weight", 142], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.653812"], ["updated_at", "2015-03-31 20:06:38.653812"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 63], ["weight", 114], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.656517"], ["updated_at", "2015-03-31 20:06:38.656517"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 62], ["weight", 156], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.659067"], ["updated_at", "2015-03-31 20:06:38.659067"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 132], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.662077"], ["updated_at", "2015-03-31 20:06:38.662077"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 68], ["weight", 121], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.664860"], ["updated_at", "2015-03-31 20:06:38.664860"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 155], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.667850"], ["updated_at", "2015-03-31 20:06:38.667850"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 65], ["weight", 154], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.670523"], ["updated_at", "2015-03-31 20:06:38.670523"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 165], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.677034"], ["updated_at", "2015-03-31 20:06:38.677034"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 69], ["weight", 156], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.679975"], ["updated_at", "2015-03-31 20:06:38.679975"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 151], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.682898"], ["updated_at", "2015-03-31 20:06:38.682898"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 67], ["weight", 121], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.687919"], ["updated_at", "2015-03-31 20:06:38.687919"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 129], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.690851"], ["updated_at", "2015-03-31 20:06:38.690851"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 66], ["weight", 153], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.695925"], ["updated_at", "2015-03-31 20:06:38.695925"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 170], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.699876"], ["updated_at", "2015-03-31 20:06:38.699876"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 68], ["weight", 155], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.703357"], ["updated_at", "2015-03-31 20:06:38.703357"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 148], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.706153"], ["updated_at", "2015-03-31 20:06:38.706153"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 67], ["weight", 114], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.708780"], ["updated_at", "2015-03-31 20:06:38.708780"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 125], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.711470"], ["updated_at", "2015-03-31 20:06:38.711470"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 67], ["weight", 130], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.714152"], ["updated_at", "2015-03-31 20:06:38.714152"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 131], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.717160"], ["updated_at", "2015-03-31 20:06:38.717160"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 68], ["weight", 141], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.719851"], ["updated_at", "2015-03-31 20:06:38.719851"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 112], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.722664"], ["updated_at", "2015-03-31 20:06:38.722664"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 66], ["weight", 150], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.725346"], ["updated_at", "2015-03-31 20:06:38.725346"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 138], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.728379"], ["updated_at", "2015-03-31 20:06:38.728379"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 67], ["weight", 170], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.731208"], ["updated_at", "2015-03-31 20:06:38.731208"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 139], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.733780"], ["updated_at", "2015-03-31 20:06:38.733780"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 65], ["weight", 130], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.736292"], ["updated_at", "2015-03-31 20:06:38.736292"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 115], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.738983"], ["updated_at", "2015-03-31 20:06:38.738983"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 67], ["weight", 153], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.741643"], ["updated_at", "2015-03-31 20:06:38.741643"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 120], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.744304"], ["updated_at", "2015-03-31 20:06:38.744304"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 68], ["weight", 136], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.746905"], ["updated_at", "2015-03-31 20:06:38.746905"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 120], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.749780"], ["updated_at", "2015-03-31 20:06:38.749780"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 65], ["weight", 125], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.752529"], ["updated_at", "2015-03-31 20:06:38.752529"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 152], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.755150"], ["updated_at", "2015-03-31 20:06:38.755150"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 63], ["weight", 141], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.757879"], ["updated_at", "2015-03-31 20:06:38.757879"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 153], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.761147"], ["updated_at", "2015-03-31 20:06:38.761147"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 67], ["weight", 167], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.763899"], ["updated_at", "2015-03-31 20:06:38.763899"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 116], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.766677"], ["updated_at", "2015-03-31 20:06:38.766677"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 66], ["weight", 121], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.769314"], ["updated_at", "2015-03-31 20:06:38.769314"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 204], ["gender", 1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:06:38.772474"], ["updated_at", "2015-03-31 20:06:38.772474"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mPerson Load (0.6ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  [1m[35mPerson Load (0.9ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (5.6ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePeople (20150327180009)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "height" integer, "weight" integer, "gender" integer, "guess_correct" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150327180009"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 211], ["gender", 1], ["created_at", "2015-03-31 20:08:02.688916"], ["updated_at", "2015-03-31 20:08:02.688916"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 201], ["gender", 1], ["created_at", "2015-03-31 20:08:02.692978"], ["updated_at", "2015-03-31 20:08:02.692978"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 154], ["gender", 1], ["created_at", "2015-03-31 20:08:02.696055"], ["updated_at", "2015-03-31 20:08:02.696055"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 75], ["weight", 173], ["gender", 1], ["created_at", "2015-03-31 20:08:02.698838"], ["updated_at", "2015-03-31 20:08:02.698838"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 73], ["weight", 212], ["gender", 1], ["created_at", "2015-03-31 20:08:02.703926"], ["updated_at", "2015-03-31 20:08:02.703926"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 213], ["gender", 1], ["created_at", "2015-03-31 20:08:02.706861"], ["updated_at", "2015-03-31 20:08:02.706861"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 205], ["gender", 1], ["created_at", "2015-03-31 20:08:02.709618"], ["updated_at", "2015-03-31 20:08:02.709618"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 78], ["weight", 211], ["gender", 1], ["created_at", "2015-03-31 20:08:02.712368"], ["updated_at", "2015-03-31 20:08:02.712368"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 188], ["gender", 1], ["created_at", "2015-03-31 20:08:02.715323"], ["updated_at", "2015-03-31 20:08:02.715323"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 198], ["gender", 1], ["created_at", "2015-03-31 20:08:02.717920"], ["updated_at", "2015-03-31 20:08:02.717920"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 179], ["gender", 1], ["created_at", "2015-03-31 20:08:02.720945"], ["updated_at", "2015-03-31 20:08:02.720945"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 207], ["gender", 1], ["created_at", "2015-03-31 20:08:02.724002"], ["updated_at", "2015-03-31 20:08:02.724002"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 72], ["weight", 171], ["gender", 1], ["created_at", "2015-03-31 20:08:02.727125"], ["updated_at", "2015-03-31 20:08:02.727125"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 187], ["gender", 1], ["created_at", "2015-03-31 20:08:02.729937"], ["updated_at", "2015-03-31 20:08:02.729937"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 75], ["weight", 214], ["gender", 1], ["created_at", "2015-03-31 20:08:02.732592"], ["updated_at", "2015-03-31 20:08:02.732592"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 189], ["gender", 1], ["created_at", "2015-03-31 20:08:02.735208"], ["updated_at", "2015-03-31 20:08:02.735208"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 171], ["gender", 1], ["created_at", "2015-03-31 20:08:02.741329"], ["updated_at", "2015-03-31 20:08:02.741329"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 75], ["weight", 176], ["gender", 1], ["created_at", "2015-03-31 20:08:02.746006"], ["updated_at", "2015-03-31 20:08:02.746006"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 76], ["weight", 163], ["gender", 1], ["created_at", "2015-03-31 20:08:02.754278"], ["updated_at", "2015-03-31 20:08:02.754278"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 169], ["gender", 1], ["created_at", "2015-03-31 20:08:02.758764"], ["updated_at", "2015-03-31 20:08:02.758764"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 186], ["gender", 1], ["created_at", "2015-03-31 20:08:02.761408"], ["updated_at", "2015-03-31 20:08:02.761408"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 204], ["gender", 1], ["created_at", "2015-03-31 20:08:02.764510"], ["updated_at", "2015-03-31 20:08:02.764510"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 208], ["gender", 1], ["created_at", "2015-03-31 20:08:02.768376"], ["updated_at", "2015-03-31 20:08:02.768376"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 75], ["weight", 208], ["gender", 1], ["created_at", "2015-03-31 20:08:02.771464"], ["updated_at", "2015-03-31 20:08:02.771464"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 74], ["weight", 196], ["gender", 1], ["created_at", "2015-03-31 20:08:02.774673"], ["updated_at", "2015-03-31 20:08:02.774673"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 211], ["gender", 1], ["created_at", "2015-03-31 20:08:02.777529"], ["updated_at", "2015-03-31 20:08:02.777529"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 73], ["weight", 218], ["gender", 1], ["created_at", "2015-03-31 20:08:02.780234"], ["updated_at", "2015-03-31 20:08:02.780234"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 167], ["gender", 1], ["created_at", "2015-03-31 20:08:02.783311"], ["updated_at", "2015-03-31 20:08:02.783311"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 73], ["weight", 180], ["gender", 1], ["created_at", "2015-03-31 20:08:02.786434"], ["updated_at", "2015-03-31 20:08:02.786434"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 72], ["weight", 189], ["gender", 1], ["created_at", "2015-03-31 20:08:02.789743"], ["updated_at", "2015-03-31 20:08:02.789743"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 218], ["gender", 1], ["created_at", "2015-03-31 20:08:02.792658"], ["updated_at", "2015-03-31 20:08:02.792658"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 168], ["gender", 1], ["created_at", "2015-03-31 20:08:02.795484"], ["updated_at", "2015-03-31 20:08:02.795484"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 153], ["gender", 1], ["created_at", "2015-03-31 20:08:02.798215"], ["updated_at", "2015-03-31 20:08:02.798215"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 216], ["gender", 1], ["created_at", "2015-03-31 20:08:02.801086"], ["updated_at", "2015-03-31 20:08:02.801086"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 71], ["weight", 179], ["gender", 1], ["created_at", "2015-03-31 20:08:02.803986"], ["updated_at", "2015-03-31 20:08:02.803986"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 181], ["gender", 1], ["created_at", "2015-03-31 20:08:02.806891"], ["updated_at", "2015-03-31 20:08:02.806891"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 73], ["weight", 201], ["gender", 1], ["created_at", "2015-03-31 20:08:02.810564"], ["updated_at", "2015-03-31 20:08:02.810564"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 76], ["weight", 217], ["gender", 1], ["created_at", "2015-03-31 20:08:02.813435"], ["updated_at", "2015-03-31 20:08:02.813435"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 68], ["weight", 172], ["gender", 1], ["created_at", "2015-03-31 20:08:02.816289"], ["updated_at", "2015-03-31 20:08:02.816289"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 77], ["weight", 188], ["gender", 1], ["created_at", "2015-03-31 20:08:02.819263"], ["updated_at", "2015-03-31 20:08:02.819263"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 71], ["weight", 169], ["gender", 1], ["created_at", "2015-03-31 20:08:02.821946"], ["updated_at", "2015-03-31 20:08:02.821946"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 75], ["weight", 174], ["gender", 1], ["created_at", "2015-03-31 20:08:02.824740"], ["updated_at", "2015-03-31 20:08:02.824740"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 196], ["gender", 1], ["created_at", "2015-03-31 20:08:02.827346"], ["updated_at", "2015-03-31 20:08:02.827346"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 159], ["gender", 1], ["created_at", "2015-03-31 20:08:02.830419"], ["updated_at", "2015-03-31 20:08:02.830419"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 215], ["gender", 1], ["created_at", "2015-03-31 20:08:02.833808"], ["updated_at", "2015-03-31 20:08:02.833808"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 185], ["gender", 1], ["created_at", "2015-03-31 20:08:02.838043"], ["updated_at", "2015-03-31 20:08:02.838043"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 77], ["weight", 167], ["gender", 1], ["created_at", "2015-03-31 20:08:02.841382"], ["updated_at", "2015-03-31 20:08:02.841382"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 202], ["gender", 1], ["created_at", "2015-03-31 20:08:02.844143"], ["updated_at", "2015-03-31 20:08:02.844143"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 191], ["gender", 1], ["created_at", "2015-03-31 20:08:02.847240"], ["updated_at", "2015-03-31 20:08:02.847240"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 199], ["gender", 1], ["created_at", "2015-03-31 20:08:02.850569"], ["updated_at", "2015-03-31 20:08:02.850569"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 78], ["weight", 161], ["gender", 1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:08:02.858763"], ["updated_at", "2015-03-31 20:08:02.858763"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 62], ["weight", 125], ["gender", -1], ["created_at", "2015-03-31 20:08:02.861845"], ["updated_at", "2015-03-31 20:08:02.861845"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 136], ["gender", -1], ["created_at", "2015-03-31 20:08:02.864688"], ["updated_at", "2015-03-31 20:08:02.864688"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 150], ["gender", -1], ["created_at", "2015-03-31 20:08:02.867763"], ["updated_at", "2015-03-31 20:08:02.867763"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 158], ["gender", -1], ["created_at", "2015-03-31 20:08:02.871479"], ["updated_at", "2015-03-31 20:08:02.871479"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 63], ["weight", 149], ["gender", -1], ["created_at", "2015-03-31 20:08:02.874307"], ["updated_at", "2015-03-31 20:08:02.874307"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 67], ["weight", 124], ["gender", -1], ["created_at", "2015-03-31 20:08:02.877023"], ["updated_at", "2015-03-31 20:08:02.877023"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 158], ["gender", -1], ["created_at", "2015-03-31 20:08:02.879953"], ["updated_at", "2015-03-31 20:08:02.879953"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 131], ["gender", -1], ["created_at", "2015-03-31 20:08:02.883134"], ["updated_at", "2015-03-31 20:08:02.883134"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 63], ["weight", 142], ["gender", -1], ["created_at", "2015-03-31 20:08:02.885989"], ["updated_at", "2015-03-31 20:08:02.885989"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 118], ["gender", -1], ["created_at", "2015-03-31 20:08:02.888572"], ["updated_at", "2015-03-31 20:08:02.888572"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 129], ["gender", -1], ["created_at", "2015-03-31 20:08:02.891384"], ["updated_at", "2015-03-31 20:08:02.891384"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 126], ["gender", -1], ["created_at", "2015-03-31 20:08:02.894744"], ["updated_at", "2015-03-31 20:08:02.894744"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 166], ["gender", -1], ["created_at", "2015-03-31 20:08:02.897333"], ["updated_at", "2015-03-31 20:08:02.897333"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 67], ["weight", 123], ["gender", -1], ["created_at", "2015-03-31 20:08:02.900199"], ["updated_at", "2015-03-31 20:08:02.900199"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 62], ["weight", 114], ["gender", -1], ["created_at", "2015-03-31 20:08:02.903024"], ["updated_at", "2015-03-31 20:08:02.903024"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 67], ["weight", 130], ["gender", -1], ["created_at", "2015-03-31 20:08:02.906130"], ["updated_at", "2015-03-31 20:08:02.906130"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 65], ["weight", 124], ["gender", -1], ["created_at", "2015-03-31 20:08:02.909193"], ["updated_at", "2015-03-31 20:08:02.909193"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 120], ["gender", -1], ["created_at", "2015-03-31 20:08:02.911791"], ["updated_at", "2015-03-31 20:08:02.911791"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 129], ["gender", -1], ["created_at", "2015-03-31 20:08:02.915747"], ["updated_at", "2015-03-31 20:08:02.915747"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 124], ["gender", -1], ["created_at", "2015-03-31 20:08:02.918788"], ["updated_at", "2015-03-31 20:08:02.918788"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 66], ["weight", 142], ["gender", -1], ["created_at", "2015-03-31 20:08:02.921317"], ["updated_at", "2015-03-31 20:08:02.921317"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 143], ["gender", -1], ["created_at", "2015-03-31 20:08:02.923818"], ["updated_at", "2015-03-31 20:08:02.923818"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 70], ["weight", 143], ["gender", -1], ["created_at", "2015-03-31 20:08:02.927387"], ["updated_at", "2015-03-31 20:08:02.927387"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 115], ["gender", -1], ["created_at", "2015-03-31 20:08:02.932218"], ["updated_at", "2015-03-31 20:08:02.932218"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 111], ["gender", -1], ["created_at", "2015-03-31 20:08:02.936517"], ["updated_at", "2015-03-31 20:08:02.936517"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 63], ["weight", 134], ["gender", -1], ["created_at", "2015-03-31 20:08:02.939537"], ["updated_at", "2015-03-31 20:08:02.939537"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 151], ["gender", -1], ["created_at", "2015-03-31 20:08:02.942185"], ["updated_at", "2015-03-31 20:08:02.942185"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 127], ["gender", -1], ["created_at", "2015-03-31 20:08:02.944849"], ["updated_at", "2015-03-31 20:08:02.944849"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 157], ["gender", -1], ["created_at", "2015-03-31 20:08:02.949506"], ["updated_at", "2015-03-31 20:08:02.949506"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 128], ["gender", -1], ["created_at", "2015-03-31 20:08:02.952793"], ["updated_at", "2015-03-31 20:08:02.952793"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 141], ["gender", -1], ["created_at", "2015-03-31 20:08:02.955987"], ["updated_at", "2015-03-31 20:08:02.955987"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 148], ["gender", -1], ["created_at", "2015-03-31 20:08:02.959358"], ["updated_at", "2015-03-31 20:08:02.959358"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 62], ["weight", 140], ["gender", -1], ["created_at", "2015-03-31 20:08:02.962826"], ["updated_at", "2015-03-31 20:08:02.962826"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 70], ["weight", 147], ["gender", -1], ["created_at", "2015-03-31 20:08:02.965920"], ["updated_at", "2015-03-31 20:08:02.965920"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 160], ["gender", -1], ["created_at", "2015-03-31 20:08:02.968736"], ["updated_at", "2015-03-31 20:08:02.968736"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 143], ["gender", -1], ["created_at", "2015-03-31 20:08:02.971378"], ["updated_at", "2015-03-31 20:08:02.971378"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 114], ["gender", -1], ["created_at", "2015-03-31 20:08:02.975313"], ["updated_at", "2015-03-31 20:08:02.975313"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 62], ["weight", 135], ["gender", -1], ["created_at", "2015-03-31 20:08:02.981369"], ["updated_at", "2015-03-31 20:08:02.981369"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 113], ["gender", -1], ["created_at", "2015-03-31 20:08:02.985144"], ["updated_at", "2015-03-31 20:08:02.985144"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 62], ["weight", 113], ["gender", -1], ["created_at", "2015-03-31 20:08:02.988086"], ["updated_at", "2015-03-31 20:08:02.988086"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 68], ["weight", 131], ["gender", -1], ["created_at", "2015-03-31 20:08:02.991080"], ["updated_at", "2015-03-31 20:08:02.991080"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 116], ["gender", -1], ["created_at", "2015-03-31 20:08:02.994728"], ["updated_at", "2015-03-31 20:08:02.994728"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 63], ["weight", 156], ["gender", -1], ["created_at", "2015-03-31 20:08:02.998083"], ["updated_at", "2015-03-31 20:08:02.998083"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 64], ["weight", 167], ["gender", -1], ["created_at", "2015-03-31 20:08:03.003037"], ["updated_at", "2015-03-31 20:08:03.003037"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 67], ["weight", 115], ["gender", -1], ["created_at", "2015-03-31 20:08:03.005760"], ["updated_at", "2015-03-31 20:08:03.005760"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 69], ["weight", 111], ["gender", -1], ["created_at", "2015-03-31 20:08:03.008588"], ["updated_at", "2015-03-31 20:08:03.008588"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 64], ["weight", 141], ["gender", -1], ["created_at", "2015-03-31 20:08:03.011506"], ["updated_at", "2015-03-31 20:08:03.011506"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 66], ["weight", 164], ["gender", -1], ["created_at", "2015-03-31 20:08:03.014207"], ["updated_at", "2015-03-31 20:08:03.014207"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["height", 69], ["weight", 130], ["gender", -1], ["created_at", "2015-03-31 20:08:03.016997"], ["updated_at", "2015-03-31 20:08:03.016997"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["height", 65], ["weight", 131], ["gender", -1], ["created_at", "2015-03-31 20:08:03.020014"], ["updated_at", "2015-03-31 20:08:03.020014"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 71], ["weight", 154], ["gender", 1], ["guess_correct", "t"], ["created_at", "2015-03-31 20:08:03.022778"], ["updated_at", "2015-03-31 20:08:03.022778"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  [1m[35mPerson Load (0.6ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
