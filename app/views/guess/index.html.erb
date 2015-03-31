@@ -2,3 +2,8 @@
 <p>Enter your height and weight and I will guess your gender!</p>
 
 <%= render 'guess_form' %>
+
+<% if flash[:error] != nil %>
+  <p>INVALID ENTRY. PLEASE TRY AGAIN</p>
+  <%= flash[:error] %>
+<% end %>

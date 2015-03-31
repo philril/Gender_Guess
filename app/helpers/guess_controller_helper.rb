@@ -1,12 +1,8 @@
 module GuessControllerHelper
 # Linear Regression calculation to make guess:
   def guess(heights, weights, genders, height_entry, weight_entry)
-    @heights = heights
-    @weights = weights
-    @genders = genders
-    @b0 = b0
-    @b1 = slope_height
-    @b2 = slope_weight
+    @heights, @weights, @genders = heights, weights, genders
+    @b0, @b1, @b2 = b0, slope_height, slope_weight
 
     if @heights.length != @weights.length
       raise "Unbalanced data"

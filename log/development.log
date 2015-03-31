@@ -18216,3 +18216,2724 @@ Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for
 
 
 Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:00:48 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:05:30 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (469.1ms)
+  Rendered guess/index.html.erb within layouts/application (472.2ms)
+Completed 200 OK in 654ms (Views: 628.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:05:36 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"3", "weight"=>"189"}, "commit"=>"Submit"}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (3.8ms)
+  Rendered guess/make_guess.js.erb (6.2ms)
+Completed 200 OK in 17ms (Views: 10.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/guess/correct?guessed_gender=Male&height=75&remote=true&weight=189" for ::1 at 2015-03-31 15:05:37 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"OX8jLIimn2M2xQ05yge690SNjqpOxHJKxs4I1CmEmbcg19TaPGek//6f+Q7w5sVwTYH7ApULIFi2A304Hkb3kw==", "guessed_gender"=>"Male", "height"=>"75", "remote"=>"true", "weight"=>"189"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 75], ["weight", 189], ["gender", 1], ["guess_correct", "t"], ["created_at", "2015-03-31 22:05:37.746148"], ["updated_at", "2015-03-31 22:05:37.746148"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/guess/results
+Completed 302 Found in 19ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/guess/results" for ::1 at 2015-03-31 15:05:37 -0700
+Processing by GuessController#results as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 'f'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  Rendered guess/results.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 147ms (Views: 142.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:05:37 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:05:38 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:05:38 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:05:38 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:05:38 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:05:38 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:05:38 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:05:38 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:05:42 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (119.9ms)
+  Rendered guess/index.html.erb within layouts/application (121.5ms)
+Completed 200 OK in 266ms (Views: 265.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:05:48 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"5", "inches"=>"5", "weight"=>"122"}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.2ms)
+  Rendered guess/make_guess.js.erb (3.1ms)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=65&remote=true&weight=122" for ::1 at 2015-03-31 15:05:49 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"wAmf7m/DtUYHpqvJns06fC9BfKe6nh68M7UySaPgh3DZoWgY2wKO2s/8X/6kLEX7Jk0JD2FRTK5DeEellCLpVA==", "guessed_gender"=>"Female", "height"=>"65", "remote"=>"true", "weight"=>"122"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 65], ["weight", 122], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 22:05:49.443359"], ["updated_at", "2015-03-31 22:05:49.443359"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/guess/results
+Completed 302 Found in 10ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/guess/results" for ::1 at 2015-03-31 15:05:49 -0700
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 'f'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 132ms (Views: 128.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:05:49 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:05:49 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:05:49 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:05:49 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:05:49 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:05:49 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:05:49 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:05:49 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:10:35 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (128.5ms)
+  Rendered guess/index.html.erb within layouts/application (130.0ms)
+Completed 200 OK in 287ms (Views: 285.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:10:39 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"a", "inches"=>"a", "weight"=>"d"}, "commit"=>"Submit"}
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (1.9ms)
+  Rendered guess/make_guess.js.erb (3.6ms)
+Completed 200 OK in 21ms (Views: 7.1ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=d" for ::1 at 2015-03-31 15:10:42 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"ZYy+tx10SVR6inrQ1s4Yvik4EoXkypxB1VAiM0xlBa58JElBqbVyyLLQjufsL2c5IDRnLT8FzlOlnVffe6drig==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"d"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered guess/_new_guess.html.erb (1.3ms)
+  Rendered guess/make_guess.js.erb (3.5ms)
+Completed 200 OK in 56ms (Views: 6.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:11:07 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (232.5ms)
+  Rendered guess/index.html.erb within layouts/application (234.1ms)
+Completed 200 OK in 384ms (Views: 381.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:11:07 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:11:07 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:11:07 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:11:08 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:11:08 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:11:08 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:11:08 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:11:08 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:11:10 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"d", "inches"=>"d", "weight"=>"d"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.6ms)
+  Rendered guess/make_guess.js.erb (3.2ms)
+Completed 200 OK in 20ms (Views: 8.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:12:14 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (207.8ms)
+  Rendered guess/index.html.erb within layouts/application (209.0ms)
+Completed 200 OK in 284ms (Views: 283.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:12:14 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:12:14 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:12:14 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:12:14 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:12:14 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:12:14 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:12:14 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:12:14 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:12:18 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"d", "inches"=>"d", "weight"=>"d"}, "commit"=>"Submit"}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (10.9ms)
+  Rendered guess/make_guess.js.erb (12.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::AGAIN):
+    11:     guessed_gender: @gender_guess }, {:class => "btn btn-default btn-primary" } %>
+    12: 
+    13:   <% if flash[:error] != [] %>
+    14:     <%= TRY AGAIN %>
+    15:     <%= flash[:error] %>
+    16:   <% end %>
+    17: 
+  app/views/guess/_new_guess.html.erb:14:in `_app_views_guess__new_guess_html_erb___4114904222257805165_70186344865340'
+  app/views/guess/make_guess.js.erb:1:in `_app_views_guess_make_guess_js_erb___4432532295242120012_70186343665080'
+  app/controllers/guess_controller.rb:18:in `block (2 levels) in make_guess'
+  app/controllers/guess_controller.rb:17:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (23.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (57.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (115.6ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:12:26 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:12:26 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:12:26 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:12:27 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"d", "inches"=>"d", "weight"=>"d"}, "commit"=>"Submit"}
+  [1m[35m (1.3ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (81.2ms)
+  Rendered guess/make_guess.js.erb (82.7ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 1.9ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::AGAIN):
+    11:     guessed_gender: @gender_guess }, {:class => "btn btn-default btn-primary" } %>
+    12: 
+    13:   <% if flash[:error] != [] %>
+    14:     <%= TRY AGAIN %>
+    15:     <%= flash[:error] %>
+    16:   <% end %>
+    17: 
+  app/views/guess/_new_guess.html.erb:14:in `_app_views_guess__new_guess_html_erb___4114904222257805165_70186344865340'
+  app/views/guess/make_guess.js.erb:1:in `_app_views_guess_make_guess_js_erb___4432532295242120012_70186343665080'
+  app/controllers/guess_controller.rb:18:in `block (2 levels) in make_guess'
+  app/controllers/guess_controller.rb:17:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (22.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (36.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (150.7ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:12:37 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (129.5ms)
+  Rendered guess/index.html.erb within layouts/application (131.3ms)
+Completed 200 OK in 279ms (Views: 277.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:12:38 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:12:38 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:12:38 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:12:38 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:12:38 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:12:38 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:12:38 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:12:38 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:12:41 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"e", "inches"=>"e", "weight"=>"e"}, "commit"=>"Submit"}
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (6.9ms)
+  Rendered guess/make_guess.js.erb (8.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.2ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::AGAIN):
+    11:     guessed_gender: @gender_guess }, {:class => "btn btn-default btn-primary" } %>
+    12: 
+    13:   <% if flash[:error] != [] %>
+    14:     <%= TRY AGAIN %>
+    15:     <%= flash[:error] %>
+    16:   <% end %>
+    17: 
+  app/views/guess/_new_guess.html.erb:14:in `_app_views_guess__new_guess_html_erb___4114904222257805165_70186344865340'
+  app/views/guess/make_guess.js.erb:1:in `_app_views_guess_make_guess_js_erb___4432532295242120012_70186343665080'
+  app/controllers/guess_controller.rb:18:in `block (2 levels) in make_guess'
+  app/controllers/guess_controller.rb:17:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (83.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (32.1ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (70.4ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:12:53 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"4", "inches"=>"4", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (11.7ms)
+  Rendered guess/make_guess.js.erb (13.4ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::AGAIN):
+    11:     guessed_gender: @gender_guess }, {:class => "btn btn-default btn-primary" } %>
+    12: 
+    13:   <% if flash[:error] != [] %>
+    14:     <%= TRY AGAIN %>
+    15:     <%= flash[:error] %>
+    16:   <% end %>
+    17: 
+  app/views/guess/_new_guess.html.erb:14:in `_app_views_guess__new_guess_html_erb___4114904222257805165_70186344865340'
+  app/views/guess/make_guess.js.erb:1:in `_app_views_guess_make_guess_js_erb___4432532295242120012_70186343665080'
+  app/controllers/guess_controller.rb:18:in `block (2 levels) in make_guess'
+  app/controllers/guess_controller.rb:17:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (22.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (34.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (76.5ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:13:54 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (471.9ms)
+  Rendered guess/index.html.erb within layouts/application (475.9ms)
+Completed 200 OK in 646ms (Views: 640.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:13:55 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:13:55 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:13:55 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:13:55 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:13:55 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:13:55 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:13:55 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:13:55 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:14:01 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"4", "inches"=>"4", "weight"=>"4"}, "commit"=>"Submit"}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (3.3ms)
+  Rendered guess/make_guess.js.erb (5.1ms)
+Completed 200 OK in 21ms (Views: 9.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:14:12 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"d", "inches"=>"d", "weight"=>"d"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.2ms)
+  Rendered guess/make_guess.js.erb (2.5ms)
+Completed 200 OK in 12ms (Views: 5.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:14:16 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (256.2ms)
+  Rendered guess/index.html.erb within layouts/application (257.7ms)
+Completed 200 OK in 328ms (Views: 327.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:14:16 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:14:16 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:14:16 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:14:16 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:14:16 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:14:16 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:14:16 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:14:16 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:15:12 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (214.6ms)
+  Rendered guess/index.html.erb within layouts/application (217.3ms)
+Completed 200 OK in 365ms (Views: 364.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:15:12 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:15:12 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:15:12 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:15:12 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:15:12 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:15:12 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:15:12 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:15:12 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:15:16 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"e", "inches"=>"e", "weight"=>"e"}, "commit"=>"Submit"}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (2.1ms)
+  Rendered guess/make_guess.js.erb (3.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.2ms)
+
+SyntaxError (/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/_new_guess.html.erb:19: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views/guess/_new_guess.html.erb:21: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/guess/_new_guess.html.erb:19: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/guess/_new_guess.html.erb:21: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/guess/make_guess.js.erb:1:in `_app_views_guess_make_guess_js_erb___4432532295242120012_70186343665080'
+  app/controllers/guess_controller.rb:18:in `block (2 levels) in make_guess'
+  app/controllers/guess_controller.rb:17:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (46.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (40.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (91.2ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:15:37 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (240.6ms)
+  Rendered guess/index.html.erb within layouts/application (242.3ms)
+Completed 200 OK in 321ms (Views: 319.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:15:37 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:15:37 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:15:37 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:15:37 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:15:37 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:15:37 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:15:37 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:15:37 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:15:41 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"e", "inches"=>"e", "weight"=>"e"}, "commit"=>"Submit"}
+  [1m[35m (0.6ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (7.4ms)
+  Rendered guess/make_guess.js.erb (9.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.2ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     guessed_gender: @gender_guess }, {:class => "btn btn-default btn-primary" } %>
+    12: 
+    13:   <% if flash[:error] != [] %>
+    14:     <% flash[:error].each do |error| %>
+    15:     <h6><%= error %></h6>
+    16:     <% end %>
+    17:   <% end %>
+  app/views/guess/_new_guess.html.erb:14:in `_app_views_guess__new_guess_html_erb___4114904222257805165_70186345370440'
+  app/views/guess/make_guess.js.erb:1:in `_app_views_guess_make_guess_js_erb___4432532295242120012_70186343665080'
+  app/controllers/guess_controller.rb:18:in `block (2 levels) in make_guess'
+  app/controllers/guess_controller.rb:17:in `make_guess'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.2ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (26.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (75.3ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (329.6ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:16:39 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (247.7ms)
+  Rendered guess/index.html.erb within layouts/application (249.4ms)
+Completed 200 OK in 409ms (Views: 407.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:16:40 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:16:40 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:16:40 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:16:40 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:16:40 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:16:40 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:16:40 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:16:40 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:16:43 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"e", "inches"=>"e", "weight"=>"e"}, "commit"=>"Submit"}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (2.4ms)
+  Rendered guess/make_guess.js.erb (4.1ms)
+Completed 200 OK in 16ms (Views: 10.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:17:06 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (257.6ms)
+  Rendered guess/index.html.erb within layouts/application (259.0ms)
+Completed 200 OK in 349ms (Views: 346.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:17:07 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:17:07 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:17:07 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:17:07 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:17:07 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:17:07 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:17:07 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:17:07 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:17:13 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (8.4ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.4ms)
+  Rendered guess/make_guess.js.erb (4.1ms)
+Completed 200 OK in 22ms (Views: 9.0ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:17:37 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (239.4ms)
+  Rendered guess/index.html.erb within layouts/application (241.8ms)
+Completed 200 OK in 416ms (Views: 414.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:17:37 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:17:37 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:17:37 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:17:37 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:17:37 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:17:37 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:17:37 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:17:37 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:17:41 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>""}, "commit"=>"Submit"}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (3.0ms)
+  Rendered guess/make_guess.js.erb (4.6ms)
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=" for ::1 at 2015-03-31 15:17:43 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"Nr1c+i5HagkWdYs5NsxAwlMm798bX9Cb9P+Qwe1QoY4vFasMmoZRld4vfw4MLT9FWiqad8CQgomEMuUt2pLPqg==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>""}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.9ms)
+
+ActionView::MissingTemplate (Missing template guess/correct, application/correct with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/philril/Documents/DBC/job_search/coding_tests/Chalk/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (60.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (38.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (90.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:18:22 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (209.2ms)
+  Rendered guess/index.html.erb within layouts/application (211.4ms)
+Completed 200 OK in 320ms (Views: 319.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:18:23 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:18:23 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:18:23 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:18:23 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:18:23 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:18:23 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:18:23 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:18:23 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:18:29 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[35m (76.6ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.0ms)
+  Rendered guess/make_guess.js.erb (5.1ms)
+Completed 200 OK in 100ms (Views: 9.0ms | ActiveRecord: 77.7ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=0" for ::1 at 2015-03-31 15:18:31 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"98t+1AQ+lpZnX7O7lL6XtttdYjJuxcOwsETyi9r6rlruY4kisP+tCq8FR4yuX+gx0lEXmrUKkaLAiYdn7TjAfg==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"0"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guess/_new_guess.html.erb (1.4ms)
+  Rendered guess/make_guess.js.erb (2.9ms)
+Completed 200 OK in 111ms (Views: 5.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=0" for ::1 at 2015-03-31 15:18:54 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"98t+1AQ+lpZnX7O7lL6XtttdYjJuxcOwsETyi9r6rlruY4kisP+tCq8FR4yuX+gx0lEXmrUKkaLAiYdn7TjAfg==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"0"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered guess/_new_guess.html.erb (1.5ms)
+  Rendered guess/make_guess.js.erb (3.0ms)
+Completed 200 OK in 30ms (Views: 6.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:18:56 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (201.2ms)
+  Rendered guess/index.html.erb within layouts/application (202.9ms)
+Completed 200 OK in 280ms (Views: 279.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:18:57 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:18:57 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:18:57 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:18:57 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:18:57 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:18:57 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:18:57 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:18:57 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:18:59 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (1.7ms)
+  Rendered guess/make_guess.js.erb (3.2ms)
+Completed 200 OK in 13ms (Views: 6.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:19:11 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"5", "inches"=>"2", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (2.7ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.4ms)
+  Rendered guess/make_guess.js.erb (5.9ms)
+Completed 200 OK in 19ms (Views: 11.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:19:42 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (218.8ms)
+  Rendered guess/index.html.erb within layouts/application (220.2ms)
+Completed 200 OK in 375ms (Views: 374.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:19:42 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:19:42 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:19:42 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:19:42 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:19:42 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:19:42 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:19:42 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:19:42 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:19:47 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (6.5ms)
+  Rendered guess/make_guess.js.erb (9.9ms)
+Completed 200 OK in 19ms (Views: 13.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:19:59 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (279.2ms)
+  Rendered guess/index.html.erb within layouts/application (281.0ms)
+Completed 200 OK in 353ms (Views: 352.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:20:00 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:20:00 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:20:00 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:20:00 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:20:00 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:20:00 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:20:00 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:20:00 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:20:03 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.2ms)
+  Rendered guess/make_guess.js.erb (3.4ms)
+Completed 200 OK in 12ms (Views: 6.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=0" for ::1 at 2015-03-31 15:20:06 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"etAKvOLYFw0i6i88iRrnlmQXOZXifatvUJ8WTVSOE0pjeP1KVhkskeqw2wuz+5gRbRtMPTmy+X0gUmOhY0x9bg==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"0"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  Rendered guess/_new_guess.html.erb (1.1ms)
+  Rendered guess/make_guess.js.erb (2.3ms)
+Completed 200 OK in 15ms (Views: 5.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:20:21 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (204.3ms)
+  Rendered guess/index.html.erb within layouts/application (205.5ms)
+Completed 200 OK in 358ms (Views: 356.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:20:22 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:20:22 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:20:22 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:20:22 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:20:22 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:20:22 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:20:22 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:20:22 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:20:25 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (3.8ms)
+  Rendered guess/make_guess.js.erb (6.5ms)
+Completed 200 OK in 31ms (Views: 10.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:20:37 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (264.4ms)
+  Rendered guess/index.html.erb within layouts/application (265.4ms)
+Completed 200 OK in 341ms (Views: 339.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:20:38 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:20:38 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:20:38 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:20:38 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:20:38 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:20:38 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:20:38 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:20:38 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:20:43 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (3.4ms)
+  Rendered guess/make_guess.js.erb (5.0ms)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:20:52 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (229.2ms)
+  Rendered guess/index.html.erb within layouts/application (230.2ms)
+Completed 200 OK in 435ms (Views: 433.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:20:52 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:20:52 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:20:52 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:20:52 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:20:52 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:20:52 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:20:52 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:20:52 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:20:56 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (2.3ms)
+  Rendered guess/make_guess.js.erb (3.8ms)
+Completed 200 OK in 15ms (Views: 7.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:20:59 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (184.1ms)
+  Rendered guess/index.html.erb within layouts/application (185.3ms)
+Completed 200 OK in 345ms (Views: 343.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:20:59 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:20:59 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:20:59 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:20:59 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:20:59 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:20:59 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:20:59 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:20:59 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:21:02 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.6ms)
+  Rendered guess/make_guess.js.erb (4.6ms)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:21:37 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (217.4ms)
+  Rendered guess/index.html.erb within layouts/application (219.9ms)
+Completed 200 OK in 409ms (Views: 407.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:21:38 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:21:38 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:21:38 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:21:38 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:21:38 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:21:38 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:21:38 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:21:38 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:21:41 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (2.4ms)
+  Rendered guess/make_guess.js.erb (4.0ms)
+Completed 200 OK in 21ms (Views: 7.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:22:18 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (210.4ms)
+  Rendered guess/index.html.erb within layouts/application (211.8ms)
+Completed 200 OK in 295ms (Views: 293.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:22:18 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:22:18 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:22:18 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:22:18 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:22:18 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:22:18 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:22:18 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:22:18 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:22:22 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (2.3ms)
+  Rendered guess/make_guess.js.erb (4.4ms)
+Completed 200 OK in 21ms (Views: 8.0ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=0" for ::1 at 2015-03-31 15:22:24 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"PtmLN2Qh1t8auBiwtzWuGpmDVez+p135A+tSLpTZS/QncXzB0ODtQ9Li7IeN1NGdkI8gRCVoD+tzJifCoxsl0A==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"0"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 43ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:22:24 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (214.0ms)
+  Rendered guess/index.html.erb within layouts/application (215.0ms)
+Completed 200 OK in 364ms (Views: 363.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:22:24 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:22:24 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:22:24 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:22:24 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:22:24 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:22:24 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:22:24 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:22:24 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:22:34 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (1.5ms)
+  Rendered guess/make_guess.js.erb (3.3ms)
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/incorrect?guessed_gender=Female&height=0&remote=true&weight=0" for ::1 at 2015-03-31 15:22:37 -0700
+Processing by GuessController#incorrect as HTML
+  Parameters: {"authenticity_token"=>"D7KZ6+Ue5YQQlw3+v24+D7tOnMHXeR1ZBlFtCf2uLWkWGm4dUd/eGNjN+cmFj0GIskLpaQy2T0t2nBjlymxDTQ==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"0"}
+  [1m[35m (7.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered guess/_guess_form.html.erb (243.9ms)
+  Rendered guess/index.html.erb within layouts/application (245.8ms)
+Completed 200 OK in 334ms (Views: 316.5ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:22:37 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:22:37 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:22:38 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:22:38 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:22:38 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:22:38 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:22:38 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:22:38 -0700
+
+
+Started POST "/guess/incorrect?guessed_gender=Female&height=0&remote=true&weight=0" for ::1 at 2015-03-31 15:23:07 -0700
+Processing by GuessController#incorrect as HTML
+  Parameters: {"authenticity_token"=>"D7KZ6+Ue5YQQlw3+v24+D7tOnMHXeR1ZBlFtCf2uLWkWGm4dUd/eGNjN+cmFj0GIskLpaQy2T0t2nBjlymxDTQ==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"0"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 135ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:23:07 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (131.4ms)
+  Rendered guess/index.html.erb within layouts/application (135.3ms)
+Completed 200 OK in 314ms (Views: 312.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:23:07 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:23:07 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:23:07 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:23:07 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:23:07 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:23:07 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:23:07 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:23:07 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:23:11 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (217.1ms)
+  Rendered guess/index.html.erb within layouts/application (218.3ms)
+Completed 200 OK in 287ms (Views: 285.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:23:11 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:23:11 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:23:11 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:23:11 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:23:11 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:23:11 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:23:11 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:23:11 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:23:16 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (3.0ms)
+  Rendered guess/make_guess.js.erb (5.2ms)
+Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=0" for ::1 at 2015-03-31 15:23:18 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"Q0iXWcFuwoDK20RB6gaHMMWESo5It/JndMIkDyoQb/Fa4GCvda/5HAKBsHbQ5/i3zIg/JpN4oHUED1HjHdIB1Q==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"0"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:23:18 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (229.1ms)
+  Rendered guess/index.html.erb within layouts/application (230.3ms)
+Completed 200 OK in 379ms (Views: 378.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:23:18 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:23:18 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:23:18 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:23:18 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:23:18 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:23:18 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:23:19 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:23:19 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:23:27 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"2", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.5ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (1.3ms)
+  Rendered guess/make_guess.js.erb (3.3ms)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/guess/correct?guessed_gender=Male&height=74&remote=true&weight=123" for ::1 at 2015-03-31 15:23:28 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"Pjp9AUlLtxKBQGDA0bYUM1MRAANpvKDr0pYIKto0LOQnkor3/YqMjkkalPfrV2u0Wh11q7Jz8vmiW33G7fZCwA==", "guessed_gender"=>"Male", "height"=>"74", "remote"=>"true", "weight"=>"123"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 123], ["gender", 1], ["guess_correct", "t"], ["created_at", "2015-03-31 22:23:28.779257"], ["updated_at", "2015-03-31 22:23:28.779257"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/guess/results
+Completed 302 Found in 17ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/guess/results" for ::1 at 2015-03-31 15:23:28 -0700
+Processing by GuessController#results as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 'f'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 142ms (Views: 137.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:23:29 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:23:29 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:23:29 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:23:29 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:23:29 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:23:29 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:23:29 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:23:29 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:23:49 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (205.1ms)
+  Rendered guess/index.html.erb within layouts/application (210.7ms)
+Completed 200 OK in 362ms (Views: 360.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:23:51 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (130.8ms)
+  Rendered guess/index.html.erb within layouts/application (132.7ms)
+Completed 200 OK in 280ms (Views: 278.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:23:51 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:23:51 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:23:51 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:23:51 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:23:51 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:23:51 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:23:51 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:23:51 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:23:53 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (327.4ms)
+  Rendered guess/index.html.erb within layouts/application (328.4ms)
+Completed 200 OK in 401ms (Views: 398.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:23:54 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:23:54 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:23:54 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:23:54 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:23:54 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:23:54 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:23:54 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:23:54 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:23:55 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (202.3ms)
+  Rendered guess/index.html.erb within layouts/application (203.3ms)
+Completed 200 OK in 414ms (Views: 345.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:23:55 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:23:55 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:23:55 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:23:55 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:23:55 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:23:55 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:23:55 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:23:55 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:24:08 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (234.6ms)
+  Rendered guess/index.html.erb within layouts/application (242.2ms)
+Completed 500 Internal Server Error in 245ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `length' for nil:NilClass):
+    3: 
+    4: <%= render 'guess_form' %>
+    5: 
+    6:   <% if flash[:error].length > 0 %>
+    7:     <p>PLEASE TRY AGAIN</p>
+    8:     <%= flash[:error] %>
+    9:   <% end %>
+  app/views/guess/index.html.erb:6:in `_app_views_guess_index_html_erb__1057554349703836675_70186343663960'
+
+
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (34.4ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/philril/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (78.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:24:22 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (126.5ms)
+  Rendered guess/index.html.erb within layouts/application (128.9ms)
+Completed 200 OK in 284ms (Views: 283.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:24:22 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:24:22 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:24:22 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:24:22 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:24:22 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:24:22 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:24:22 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:24:22 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:24:26 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.6ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.3ms)
+  Rendered guess/make_guess.js.erb (3.2ms)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=0" for ::1 at 2015-03-31 15:24:27 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"6R2xXPXySfNYq1mPg7XOr7o3CagTpNwALLJM7FzVIqjwtUaqQTNyb5Dxrbi5VLEoszt8AMhrjhJcfzkAaxdMjA==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"0"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:24:27 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (293.2ms)
+  Rendered guess/index.html.erb within layouts/application (295.0ms)
+Completed 200 OK in 368ms (Views: 367.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:24:28 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:24:28 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:24:28 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:24:28 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:24:28 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:24:28 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:24:28 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:24:28 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:24:32 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (207.7ms)
+  Rendered guess/index.html.erb within layouts/application (208.8ms)
+Completed 200 OK in 353ms (Views: 352.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:24:33 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:24:33 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:24:33 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:24:33 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:24:33 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:24:33 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:24:33 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:24:33 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:24:36 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (1.4ms)
+  Rendered guess/make_guess.js.erb (3.5ms)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/incorrect?guessed_gender=Female&height=0&remote=true&weight=0" for ::1 at 2015-03-31 15:24:39 -0700
+Processing by GuessController#incorrect as HTML
+  Parameters: {"authenticity_token"=>"Wrc52Zbk7MmcVYCTll80qy+uBsRHok2olNpNfghCEu9DH84vIiXXVVQPdKSsvkssJqJzbJxtH7rkFziSP4B8yw==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"0"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:24:39 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (654.3ms)
+  Rendered guess/index.html.erb within layouts/application (655.3ms)
+Completed 200 OK in 762ms (Views: 758.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:24:39 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:24:39 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:24:39 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:24:39 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:24:39 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:24:39 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:24:39 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:24:40 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:24:49 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (281.1ms)
+  Rendered guess/index.html.erb within layouts/application (282.1ms)
+Completed 200 OK in 435ms (Views: 430.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:24:49 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:24:50 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:24:50 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:24:50 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:24:50 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:24:50 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:24:50 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:24:50 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:24:53 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.2ms)
+  Rendered guess/make_guess.js.erb (5.0ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/guess/incorrect?guessed_gender=Male&height=77&remote=true&weight=123" for ::1 at 2015-03-31 15:24:54 -0700
+Processing by GuessController#incorrect as HTML
+  Parameters: {"authenticity_token"=>"HtMqpCXXm0cq8+y1JzJH5dJM+NARqf0Yckxm8jW5Ae0He91SkRag2+KpGIId0zhi20CNeMpmrwoCgRMeAntvyQ==", "guessed_gender"=>"Male", "height"=>"77", "remote"=>"true", "weight"=>"123"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 77], ["weight", 123], ["gender", -1], ["guess_correct", "f"], ["created_at", "2015-03-31 22:24:54.793455"], ["updated_at", "2015-03-31 22:24:54.793455"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/guess/results
+Completed 302 Found in 21ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/guess/results" for ::1 at 2015-03-31 15:24:54 -0700
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 'f'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 148ms (Views: 144.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:24:54 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:24:54 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:24:55 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:24:55 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:24:55 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:24:55 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:24:55 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:24:55 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:24:57 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (211.5ms)
+  Rendered guess/index.html.erb within layouts/application (213.7ms)
+Completed 200 OK in 361ms (Views: 360.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:25:01 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"d", "inches"=>"d", "weight"=>"d"}, "commit"=>"Submit"}
+  [1m[36m (0.6ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (1.4ms)
+  Rendered guess/make_guess.js.erb (2.9ms)
+Completed 200 OK in 14ms (Views: 7.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/guess/incorrect?guessed_gender=Female&height=0&remote=true&weight=d" for ::1 at 2015-03-31 15:25:02 -0700
+Processing by GuessController#incorrect as HTML
+  Parameters: {"authenticity_token"=>"Oi/m2ZUG/ofQAB/TKujVkYMmSciNR+h3JQ+uX5RIxcIjhxEvIcfFGxha6+QQCaoWiio8YFaIumVVwtuzo4qr5g==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"d"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:25:02 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (216.6ms)
+  Rendered guess/index.html.erb within layouts/application (217.7ms)
+Completed 200 OK in 287ms (Views: 286.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:25:02 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:25:03 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:25:03 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:25:03 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:25:03 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:25:03 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:25:03 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:25:03 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:25:21 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (277.6ms)
+  Rendered guess/index.html.erb within layouts/application (279.9ms)
+Completed 200 OK in 351ms (Views: 349.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:25:22 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:25:22 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:25:22 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:25:22 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:25:22 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:25:22 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:25:22 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:25:22 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:25:25 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"0", "inches"=>"0", "weight"=>"0"}, "commit"=>"Submit"}
+  [1m[35m (1.1ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.3ms)
+  Rendered guess/make_guess.js.erb (2.9ms)
+Completed 200 OK in 12ms (Views: 6.3ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=0" for ::1 at 2015-03-31 15:25:26 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"6bQZTkLGyAYia6JBKNraXhZUl7FJeGH0jhYGFun6UwXwHO649gfzmuoxVnYSO6XZH1jiGZK3M+b+23P63jg9IQ==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"0"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 104ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:25:26 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (142.4ms)
+  Rendered guess/index.html.erb within layouts/application (143.6ms)
+Completed 200 OK in 314ms (Views: 313.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:25:27 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:25:27 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:25:27 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:25:27 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:25:27 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:25:27 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:25:27 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:25:27 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:25:31 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"2", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (1.6ms)
+  Rendered guess/make_guess.js.erb (3.1ms)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/correct?guessed_gender=Male&height=74&remote=true&weight=123" for ::1 at 2015-03-31 15:25:32 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"cSIwbjq3cX9Iiw5Prhjm1G4sX5mti0C45kvJvQp3Q4FoiseYjnZK44DR+niU+ZlTZyAqMXZEEqqWhrxRPbUtpQ==", "guessed_gender"=>"Male", "height"=>"74", "remote"=>"true", "weight"=>"123"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 74], ["weight", 123], ["gender", 1], ["guess_correct", "t"], ["created_at", "2015-03-31 22:25:32.705545"], ["updated_at", "2015-03-31 22:25:32.705545"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/guess/results
+Completed 302 Found in 10ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/guess/results" for ::1 at 2015-03-31 15:25:32 -0700
+Processing by GuessController#results as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 'f'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 166ms (Views: 159.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:25:32 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:25:32 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:25:32 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:25:32 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:25:33 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:25:33 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:25:33 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:25:33 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:25:36 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (118.5ms)
+  Rendered guess/index.html.erb within layouts/application (120.0ms)
+Completed 200 OK in 259ms (Views: 258.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:25:40 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"s", "inches"=>"sd", "weight"=>"sad"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.1ms)
+  Rendered guess/make_guess.js.erb (2.4ms)
+Completed 200 OK in 12ms (Views: 6.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=sad" for ::1 at 2015-03-31 15:25:41 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"xbFEZadn2fH6AETA4ilth7LttVHYLBTLaWiqa0T4xfzcGbOTE6bibTJasPfYyBIAu+HA+QPjRtkZpd+Hczqr2A==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"sad"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:25:41 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (198.1ms)
+  Rendered guess/index.html.erb within layouts/application (199.2ms)
+Completed 200 OK in 277ms (Views: 276.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:25:41 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:25:41 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:25:41 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:25:41 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:25:41 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:25:41 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:25:41 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:25:41 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:26:24 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (314.0ms)
+  Rendered guess/index.html.erb within layouts/application (316.7ms)
+Completed 200 OK in 472ms (Views: 470.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:26:25 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:26:25 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:26:25 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:26:25 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:26:25 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:26:25 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:26:25 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:26:25 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:26:28 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"d", "inches"=>"d", "weight"=>"d"}, "commit"=>"Submit"}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (1.4ms)
+  Rendered guess/make_guess.js.erb (3.0ms)
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=d" for ::1 at 2015-03-31 15:26:29 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"Is/zCNuHm9cYVMriE23wpFBzOC45/wOPjEFAxFmVsy87ZwT+b0agS9AOPtUpjI8jWX9NhuIwUZ38jDUoblfdCw==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"d"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:26:29 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (219.9ms)
+  Rendered guess/index.html.erb within layouts/application (221.0ms)
+Completed 200 OK in 296ms (Views: 295.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:26:30 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:26:30 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:26:30 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:26:30 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:26:30 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:26:30 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:26:30 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:26:30 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:26:37 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"5", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.3ms)
+  Rendered guess/make_guess.js.erb (3.2ms)
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/guess/correct?guessed_gender=Male&height=77&remote=true&weight=123" for ::1 at 2015-03-31 15:26:40 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"Z3mfj4u8/Q94dOQmKJNiv+9jJ6/6Ho6PJ3SIKt0Jxgd+0Wh5P33Gk7AuEBESch045m9SByHR3J1Xuf3G6suoIw==", "guessed_gender"=>"Male", "height"=>"77", "remote"=>"true", "weight"=>"123"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 77], ["weight", 123], ["gender", 1], ["guess_correct", "t"], ["created_at", "2015-03-31 22:26:40.164589"], ["updated_at", "2015-03-31 22:26:40.164589"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/guess/results
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/guess/results" for ::1 at 2015-03-31 15:26:40 -0700
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.3ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 'f'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 161ms (Views: 155.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:26:40 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:26:40 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:26:40 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:26:40 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:26:40 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:26:40 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:26:40 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:26:40 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:26:41 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (199.9ms)
+  Rendered guess/index.html.erb within layouts/application (202.5ms)
+Completed 200 OK in 275ms (Views: 274.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:26:49 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"4", "inches"=>"12", "weight"=>"132"}, "commit"=>"Submit"}
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.5ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (1.3ms)
+  Rendered guess/make_guess.js.erb (3.5ms)
+Completed 200 OK in 14ms (Views: 7.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=60&remote=true&weight=132" for ::1 at 2015-03-31 15:26:50 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"biYSccVEQ39G2lqHGsrDIEppe6YrcA3UUCQuSvka3TB3juWHcYV4446ArrAgK7ynQ2UODvC/X8Yg6VumztizFA==", "guessed_gender"=>"Female", "height"=>"60", "remote"=>"true", "weight"=>"132"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 60], ["weight", 132], ["gender", -1], ["guess_correct", "t"], ["created_at", "2015-03-31 22:26:50.359681"], ["updated_at", "2015-03-31 22:26:50.359681"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/guess/results
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/guess/results" for ::1 at 2015-03-31 15:26:50 -0700
+Processing by GuessController#results as HTML
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 'f'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  Rendered guess/results.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 250ms (Views: 245.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:26:50 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:26:50 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:26:50 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:26:50 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:26:50 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:26:50 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:26:50 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:26:50 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:26:52 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (200.1ms)
+  Rendered guess/index.html.erb within layouts/application (201.6ms)
+Completed 200 OK in 278ms (Views: 277.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:30:46 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"2", "weight"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.9ms)
+  Rendered guess/make_guess.js.erb (3.8ms)
+Completed 200 OK in 21ms (Views: 9.6ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/guess/correct?guessed_gender=Male&height=74&remote=true&weight=123" for ::1 at 2015-03-31 15:30:47 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"fBP4/3oTG4vTFNrizOGxZof0QwajlNDLlj5+IbAPMYBluw8JztIgFxtOLtX2AM7hjvg2rnhbgtnm8wvNh81fpA==", "guessed_gender"=>"Male", "height"=>"74", "remote"=>"true", "weight"=>"123"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 74], ["weight", 123], ["gender", 1], ["guess_correct", "t"], ["created_at", "2015-03-31 22:30:47.447212"], ["updated_at", "2015-03-31 22:30:47.447212"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/guess/results
+Completed 302 Found in 22ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/guess/results" for ::1 at 2015-03-31 15:30:47 -0700
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 'f'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  Rendered guess/results.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 198ms (Views: 192.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:30:47 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:30:47 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:30:47 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:30:47 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:30:47 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:30:47 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:30:47 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:30:47 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:30:49 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (204.2ms)
+  Rendered guess/index.html.erb within layouts/application (206.8ms)
+Completed 200 OK in 284ms (Views: 283.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:30:53 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"e", "inches"=>"sd", "weight"=>"sa"}, "commit"=>"Submit"}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.3ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (1.2ms)
+  Rendered guess/make_guess.js.erb (2.9ms)
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/guess/correct?guessed_gender=Female&height=0&remote=true&weight=sa" for ::1 at 2015-03-31 15:31:05 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"ETjtms+liUgWNa2anbw/qjKZ60+dX5N8bCXQ4Xe/vu4IkBpse2Sy1N5vWa2nXUAtO5We50aQwW4c6KUNQH3Qyg==", "guessed_gender"=>"Female", "height"=>"0", "remote"=>"true", "weight"=>"sa"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-03-31 15:31:05 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (310.4ms)
+  Rendered guess/index.html.erb within layouts/application (312.6ms)
+Completed 200 OK in 461ms (Views: 460.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:31:05 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:31:05 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:31:05 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:31:05 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:31:05 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:31:05 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:31:05 -0700
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:31:05 -0700
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:31:13 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"5", "inches"=>"11", "weight"=>"134"}, "commit"=>"Submit"}
+  [1m[35m (0.5ms)[0m  SELECT "people"."height" FROM "people"
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."weight" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."gender" FROM "people"
+  Rendered guess/_new_guess.html.erb (1.8ms)
+  Rendered guess/make_guess.js.erb (3.6ms)
+Completed 200 OK in 12ms (Views: 6.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/correct?guessed_gender=Male&height=71&remote=true&weight=134" for ::1 at 2015-03-31 15:31:15 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"FB9lv9G5XKjcfvYbspdWWuaXIyJ5+f+22/8FJMf8mY8Nt5JJZXhnNBQkAiyIdind75tWiqI2raSrMnDI8D73qw==", "guessed_gender"=>"Male", "height"=>"71", "remote"=>"true", "weight"=>"134"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["height", 71], ["weight", 134], ["gender", 1], ["guess_correct", "t"], ["created_at", "2015-03-31 22:31:15.602474"], ["updated_at", "2015-03-31 22:31:15.602474"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/guess/results
+Completed 302 Found in 26ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/guess/results" for ::1 at 2015-03-31 15:31:15 -0700
+Processing by GuessController#results as HTML
+  [1m[35mPerson Load (0.4ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 'f'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'
+  Rendered guess/results.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 139ms (Views: 135.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:31:15 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:31:15 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:31:15 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:31:15 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:31:15 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:31:15 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:31:15 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:31:15 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:31:17 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (200.7ms)
+  Rendered guess/index.html.erb within layouts/application (202.6ms)
+Completed 200 OK in 350ms (Views: 349.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/guess/make_guess" for ::1 at 2015-03-31 15:31:26 -0700
+Processing by GuessController#make_guess as JS
+  Parameters: {"utf8"=>"✓", "guess"=>{"feet"=>"6", "inches"=>"7", "weight"=>"134"}, "commit"=>"Submit"}
+  [1m[36m (0.4ms)[0m  [1mSELECT "people"."height" FROM "people"[0m
+  [1m[35m (0.4ms)[0m  SELECT "people"."weight" FROM "people"
+  [1m[36m (0.3ms)[0m  [1mSELECT "people"."gender" FROM "people"[0m
+  Rendered guess/_new_guess.html.erb (1.2ms)
+  Rendered guess/make_guess.js.erb (3.1ms)
+Completed 200 OK in 12ms (Views: 7.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/guess/correct?guessed_gender=Male&height=79&remote=true&weight=134" for ::1 at 2015-03-31 15:31:29 -0700
+Processing by GuessController#correct as HTML
+  Parameters: {"authenticity_token"=>"ya7YFYTDtXJxX9Ih9z4VCzmGjD/wTVH/pYpxWPh9gJLQBi/jMAKO7rkFJhbN32qMMIr5lyuCA+3VRwS0z7/utg==", "guessed_gender"=>"Male", "height"=>"79", "remote"=>"true", "weight"=>"134"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "people" ("height", "weight", "gender", "guess_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["height", 79], ["weight", 134], ["gender", 1], ["guess_correct", "t"], ["created_at", "2015-03-31 22:31:29.166716"], ["updated_at", "2015-03-31 22:31:29.166716"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/guess/results
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/guess/results" for ::1 at 2015-03-31 15:31:29 -0700
+Processing by GuessController#results as HTML
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT "people".* FROM "people" WHERE "people"."guess_correct" = 'f'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "people".* FROM "people" WHERE "people"."guess_correct" = 't'[0m
+  Rendered guess/results.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 142ms (Views: 135.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/guess_controller-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-31 15:31:29 -0700
+
+
+Started GET "/assets/bootstrap.min-d5180c4cffcca11775f4c4899be5b327.css?body=1" for ::1 at 2015-03-31 15:31:29 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-31 15:31:29 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-31 15:31:29 -0700
+
+
+Started GET "/assets/application-48d8b7136deccd7e75b8bf8953e22d91.css?body=1" for ::1 at 2015-03-31 15:31:29 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-31 15:31:29 -0700
+
+
+Started GET "/assets/application-12b8f543cd30f7da91cbc02f9924ff5c.js?body=1" for ::1 at 2015-03-31 15:31:29 -0700
+
+
+Started GET "/assets/guess_controller-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-31 15:31:29 -0700
+
+
+Started GET "/" for ::1 at 2015-03-31 15:31:31 -0700
+Processing by GuessController#index as HTML
+  Rendered guess/_guess_form.html.erb (204.1ms)
+  Rendered guess/index.html.erb within layouts/application (205.5ms)
+Completed 200 OK in 357ms (Views: 356.1ms | ActiveRecord: 0.0ms)

@@ -32,6 +32,7 @@ class GuessController < ApplicationController
     if person.save
       redirect_to results_path
     else
+      redirect_to :root
       flash[:error] = person.errors.full_messages
     end
   end
@@ -49,6 +50,7 @@ class GuessController < ApplicationController
     if person.save
       redirect_to results_path
     else
+      redirect_to :root
       flash[:error] = person.errors.full_messages
     end
   end
