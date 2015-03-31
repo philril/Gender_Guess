@@ -9,6 +9,6 @@ Gender Guess is a simple app that guesses a user's gender based on their entered
 
 ##### Instructions to run Gender Guess locally
 - Run "bundle install" in command line
-- Create, migrate, and seed database in development environemnt
-- Run "bundle exec shotgun" in command line
-- Open browser to local host on port 9393
+- Use rake commands to create, migrate, and seed database in development environemnt
+- Run "rails server" in command line
+- Open browser to local host on port 3000

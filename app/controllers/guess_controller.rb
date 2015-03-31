@@ -3,8 +3,7 @@ class GuessController < ApplicationController
 
 # POST
   def make_guess
-    # Guess based upon linear regression calculation in helper methods
-
+    # Guess based upon linear regression calculation (in helper methods)
     # Get all heights, weights, and genders to base guess upon:
     heights = Person.pluck(:height)
     weights = Person.pluck(:weight)
@@ -24,33 +23,41 @@ class GuessController < ApplicationController
   def correct
     #If guess correct, store gender and correct guess in DB.
     #To-do: Use strong params (with flip_gender and convert_gender_string methods built in somehow)
-    Person.new(
+    person = Person.create(
       height: params[:height],
       weight: params[:weight],
-      gender: convert_gender_string(params[:gender]),#convert string to -1/1 to store.
-      guess_correct: false
+      gender: convert_gender_string(params[:guessed_gender]),#convert string to -1/1 to store.
+      guess_correct: true
     )
-    redirect_to results_path
+    if person.save
+      redirect_to results_path
+    else
+      flash[:error] = person.errors.full_messages
+    end
   end
 
 # POST
   def incorrect
     #If incorrect, switch gender to store correct gender in DB.
     #To-do: Use strong params (with flip_gender and convert_gender_string methods built in somehow)
-    Person.new(
+    person = Person.create(
       height: params[:height],
       weight: params[:weight],
-      gender: flip_gender(params[:gender]),#convert string to -1/1 to store.
+      gender: flip_gender(params[:guessed_gender]),#convert string to -1/1 to store.
       guess_correct: false
     )
-    redirect_to results_path
+    if person.save
+      redirect_to results_path
+    else
+      flash[:error] = person.errors.full_messages
+    end
   end
 
 #GET
   def results
     @num_correct = Person.where(guess_correct:true).length
-    @total_num = Person.where(guess_correct:!nil).length
-    @percent = ((@num_correct / @total_num) * 100).floor
+    @total_num = Person.where(guess_correct:false).length + Person.where(guess_correct:true).length
+    @percent = (@num_correct.to_f / @total_num.to_f * 100).to_i
   end
 
 end

@@ -1,5 +1,5 @@
 <div class="results">
-  <h4>I've made <%= @num_correct %> correct guesses out of <%= @total_num %> total guesses for a <%= @percent %> percent success rate</h4>
+  <h4>I've made <span class="red"><%= @num_correct %></span> correct guesses out of <span class="red"><%= @total_num %></span> total guesses for a <span class="red"><%= @percent %></span> percent success rate</h4>
   <h5>Try again?</h5>
   <%= link_to 'Retry', {:action => 'index'}, {:class => "btn btn-default btn-primary" } %>
 </div>

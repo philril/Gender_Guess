@@ -10,4 +10,8 @@
   <%= button_to 'No', { action: 'incorrect', remote: true, height: @height, weight: @weight,
     guessed_gender: @gender_guess }, {:class => "btn btn-default btn-primary" } %>
 
+  <% if flash[:error] != [] %>
+    <%= flash[:error] %>
+  <% end %>
+
 </div>
